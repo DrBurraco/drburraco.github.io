@@ -235,6 +235,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 
 /*My CSS*/
+/*FONT FAMILY*/
 .w3-text-josefin-sans {
     font-family: Josefin Sans;
 }
@@ -245,6 +246,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     font-weight: 700;
 }
 
+/*HEADER*/
 .w3-hover-bottombar::after{    
     content: "";
     display: block;
@@ -258,3 +260,59 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-hover-bottombar:hover::after{    
     transform: scale(1);
 }
+
+/*OPEN IMAGE*/
+body, html {
+    height: 100%;
+}
+
+.w3-hero-image{
+    background-image: url("/assets/img/hero-image-home.jpg");
+    background-color: #cccccc;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/*BUTTONS*/
+.w3-btn-main {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #000;
+    border: none;
+    color: yellow;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .w3-btn-main span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .w3-btn-main span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .w3-btn-main:hover span {
+    padding-right: 25px;
+  }
+  
+  .w3-btn-main:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
