@@ -312,6 +312,7 @@ body, html {
 /*BUTTONS*/
 .w3-btn-main {
     position: relative;
+    display: inline-block;
     border-radius: 4px;
     background-color: #000;
     border: none;
@@ -346,4 +347,14 @@ body, html {
   .w3-btn-main:hover span:after {
     opacity: 1;
     right: 0;
+  }
+
+  /*HOURS SECTION*/
+  .w3-hours-section{
+    border-top-width: 4px; 
+    border-top-style: solid; 
+    border-top-color: black; 
+    border-bottom-width: 4px; 
+    border-bottom-style: solid; 
+    border-bottom-color: black;
   }

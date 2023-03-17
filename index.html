@@ -1,47 +1,187 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <script type="text/javascript" src="js/scripts.js"></script>
-    <title>Kilometri&Miglia</title>
-</head>
-<body>
-    <!-- Navbar (sit on top) -->
-<div class="w3-top">
-    <div class="w3-bar w3-white w3-opacity-min" id="myNavbar">
-      <div class="w3-right w3-xlarge">
-        <a class="w3-bar-item w3-button w3-right w3-hover-black w3-hide-medium w3-hide-large" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-          <i class="fa fa-bars"></i>
-        </a>
-        <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-hover-bottombar">HOME</a>
-        <a href="#chi-siamo" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-hover-bottombar">CHI SIAMO</a>
-        <a href="#servizi" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-hover-bottombar">SERVIZI</a>
-        <a href="#contatti" class="w3-bar-item w3-button w3-hide-small  w3-hover-none w3-hover-bottombar">CONTATTI</a>
-      </div>
-    </div>
-  
-    <!-- Navbar on small screens -->
-    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-      <a href="#chi-siamo" class="w3-bar-item w3-button" onclick="toggleFunction()">CHI SIAMO</a>
-      <a href="#servizi" class="w3-bar-item w3-button" onclick="toggleFunction()">SERVIZI</a>
-      <a href="#contatti" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTATTI</a>
-    </div>
-  </div>
-  
-  <!-- First Parallax Image with Logo Text -->
-  <div class="hero-img-1 w3-display-container" id="home">
-    <div class="w3-display-middle" style="white-space:nowrap;">
-      <h1 class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">KILOMETRI&MIGLIA</h1>
-      <h2> Pratiche auto, veicoli storici, noleggio con conducente e molto altro.</h2>
-      <div class="w3-btn-main"><span>ESPLORA</span></div>
-    </div>
-  </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script type="text/javascript" src="js/scripts.js"></script>
+        <title>Kilometri&Miglia</title>
+    </head>
+    <body>
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top">
+            <div class="w3-bar w3-white w3-opacity-min w3-animate-top" id="myNavbar">
+                <div class="w3-right w3-xlarge">
+                    <a class="w3-bar-item w3-button w3-right w3-hover-black w3-hide-medium w3-hide-large" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                    <i class="fa fa-bars"></i>
+                    </a>
+                    <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-hover-bottombar">HOME</a>
+                    <a href="#chi-siamo" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-hover-bottombar">CHI SIAMO</a>
+                    <a href="#servizi" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-hover-bottombar">SERVIZI</a>
+                    <a href="#contatti" class="w3-bar-item w3-button w3-hide-small  w3-hover-none w3-hover-bottombar">CONTATTI</a>
+                </div>
+            </div>
+        
+            <!-- Navbar on small screens -->
+            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+                <a href="#chi-siamo" class="w3-bar-item w3-button" onclick="toggleFunction()">CHI SIAMO</a>
+                <a href="#servizi" class="w3-bar-item w3-button" onclick="toggleFunction()">SERVIZI</a>
+                <a href="#contatti" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTATTI</a>
+            </div>
+        </div>
+    
+        <!-- Page content -->
+
+        <!-- First Parallax Image with Logo Text -->
+        <div class="hero-img-1" id="home">
+            <div class="w3-display-middle w3-center" style="white-space:nowrap;">
+                <h1 class="w3-padding-large w3-black w3-xlarge w3-wide">KILOMETRI&MIGLIA</h1>
+                <h2 class="w3-padding-16 w3-black w3-hide-small w3-xlarge"> Pratiche auto, veicoli storici, noleggio con conducente e molto altro.</h3>
+                <div class="w3-center w3-btn-main"><span>ESPLORA</span></div>
+            </div>
+        </div>
+
+        <!-- Services Section-->
+        <div class="w3-content w3-center w3-white w3-padding-top-64" id="servizi">
+            <div class="w3-container">
+                <h2 class="w3-wide w3-xxlarge"><b><span class="w3-hide-small">I NOSTRI </span>SERVIZI</b></h2>
+                <h3 class="w3-wide w3-left">PRATICHE STANDARD</h3>
+                <div class="w3-row-padding">
+                    <div class="w3-third">
+                        <div class="w3-display-container">
+                            <img src="/assets/img/placeholder-logo.png" class="w3-image" alt="Random Name">
+                            <div class="w3-display-topleft w3-xlarge">
+                                <i class="fa fa-car"><span class="w3-margin-left"><b>Pratiche Veicoli</b></span></i>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-third">                        
+                        <div class="w3-display-container">
+                            <img src="/assets/img/placeholder-logo.png" class="w3-image" alt="Random Name">
+                            <div class="w3-display-topleft w3-xlarge">
+                                <i class="fa fa-car"><span class="w3-margin-left"><b>Pratiche Veicoli</b></span></i>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-third">
+                        <div class="w3-display-container">
+                            <img src="/assets/img/placeholder-logo.png" class="w3-image" alt="Random Name">
+                            <div class="w3-display-topleft w3-xlarge">
+                                <i class="fa fa-car"><span class="w3-margin-left"><b>Pratiche Veicoli</b></span></i>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="w3-wide w3-left">PRATICHE VEICOLI STORICI</h3>
+                <div class="w3-row">
+                    <div class="w3-third">
+                        <div class="w3-display-container">
+                            <img src="/assets/img/placeholder-logo.png" class="w3-image" alt="Random Name">
+                            <div class="w3-display-topleft w3-xlarge">
+                                <i class="fa fa-car"><span class="w3-margin-left"><b>Pratiche Veicoli</b></span></i>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-third">
+                        <div class="w3-display-container">
+                            <img src="/assets/img/placeholder-logo.png" class="w3-image" alt="Random Name">
+                            <div class="w3-display-topleft w3-xlarge">
+                                <i class="fa fa-car"><span class="w3-margin-left"><b>Pratiche Veicoli</b></span></i>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-third">
+                        <div class="w3-display-container">
+                            <img src="/assets/img/placeholder-logo.png" class="w3-image" alt="Random Name">
+                            <div class="w3-display-topleft w3-xlarge">
+                                <i class="fa fa-car"><span class="w3-margin-left"><b>Pratiche Veicoli</b></span></i>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- Services Section-->
+        <div class="w3-content w3-center w3-white w3-hours-section" id="orari">
+            <div class="w3-container">
+                <h2 class="w3-wide w3-xxlarge"><b><span class="w3-hide-small">I NOSTRI </span>SERVIZI</b></h2>
+                <h3 class="w3-wide w3-left">PRATICHE STANDARD</h3>
+                <div class="w3-row-padding">
+                    <div class="w3-third">
+                        <div class="w3-display-container">
+                            <img src="/assets/img/placeholder-logo.png" class="w3-image" alt="Random Name">
+                            <div class="w3-display-topleft w3-xlarge">
+                                <i class="fa fa-car"><span class="w3-margin-left"><b>Pratiche Veicoli</b></span></i>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-third">                        
+                        <div class="w3-display-container">
+                            <img src="/assets/img/placeholder-logo.png" class="w3-image" alt="Random Name">
+                            <div class="w3-display-topleft w3-xlarge">
+                                <i class="fa fa-car"><span class="w3-margin-left"><b>Pratiche Veicoli</b></span></i>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-third">
+                        <div class="w3-display-container">
+                            <img src="/assets/img/placeholder-logo.png" class="w3-image" alt="Random Name">
+                            <div class="w3-display-topleft w3-xlarge">
+                                <i class="fa fa-car"><span class="w3-margin-left"><b>Pratiche Veicoli</b></span></i>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="w3-wide w3-left">PRATICHE VEICOLI STORICI</h3>
+                <div class="w3-row">
+                    <div class="w3-third">
+                        <div class="w3-display-container">
+                            <img src="/assets/img/placeholder-logo.png" class="w3-image" alt="Random Name">
+                            <div class="w3-display-topleft w3-xlarge">
+                                <i class="fa fa-car"><span class="w3-margin-left"><b>Pratiche Veicoli</b></span></i>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-third">
+                        <div class="w3-display-container">
+                            <img src="/assets/img/placeholder-logo.png" class="w3-image" alt="Random Name">
+                            <div class="w3-display-topleft w3-xlarge">
+                                <i class="fa fa-car"><span class="w3-margin-left"><b>Pratiche Veicoli</b></span></i>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-third">
+                        <div class="w3-display-container">
+                            <img src="/assets/img/placeholder-logo.png" class="w3-image" alt="Random Name">
+                            <div class="w3-display-topleft w3-xlarge">
+                                <i class="fa fa-car"><span class="w3-margin-left"><b>Pratiche Veicoli</b></span></i>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </body>
 </html>
