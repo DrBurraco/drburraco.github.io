@@ -321,7 +321,7 @@ html {
 
 /* First image (Home. Full height) */
 .hero-img-1 {
-  background-image: url('../assets/img/hero-image-home.jpg');
+  background-image: url('./assets/img/hero-image-home.jpg');
   min-height: 100%;
 }
 
