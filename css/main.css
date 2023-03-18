@@ -290,7 +290,7 @@ html {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: 2s ease;
+  transition: 0.5s ease;
   background-color: yellow;
 }
 
@@ -321,7 +321,7 @@ html {
 
 /* First image (Home. Full height) */
 .hero-img-1 {
-  background-image: url('/assets/img/hero-image-home.jpg');
+  background-image: url('../assets/img/hero-image-home.jpg');
   min-height: 100%;
 }
 
