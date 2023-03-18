@@ -321,7 +321,6 @@ html {
 
 /* First image (Home. Full height) */
 .hero-img-1 {
-  background-image: url('../assets/img/hero-image-home.jpg');
   min-height: 100%;
 }
 
@@ -333,7 +332,7 @@ html {
 
 /* Third image (Servizi. Full height) */
 .hero-img-3 {
-  background-image: url("/w3images/parallax3.jpg");
+  /*background-image: url("/w3images/parallax3.jpg");*/
   min-height: 400px;
 }
 
