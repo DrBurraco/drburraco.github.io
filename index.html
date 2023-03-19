@@ -17,7 +17,7 @@
         <!-- Navbar (sit on top) -->
         <div class="w3-top">
             <div class="w3-bar w3-white w3-opacity-min w3-animate-top w3-xlarge" id="myNavbar">
-                <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-text-magneto" style="margin-left: 30px;"><b>K&A</b></a>
+                <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-text-magneto" style="margin-left: 30px;"><b>K&M</b></a>
                 <div class="w3-right">
                     <a class="w3-bar-item w3-button w3-right w3-hover-black w3-hide-medium w3-hide-large" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
                     <i class="fa fa-bars"></i>
@@ -67,8 +67,24 @@
                             <div class="w3-display-container">
                                 <div class="w3-container-overlay">
                                     <img src="/assets/img/hero-image-home.jpg" class="w3-image" alt="Random Name">
-                                    <div class="w3-service-overlay">
-                                        <div class="w3-service-overlay-text w3-xxxlarge">+</div>
+                                    <div class="w3-service-overlay" onclick="document.getElementById('modal01').style.display='block'">
+                                        <div class="w3-service-overlay-text w3-xxxlarge" >+</div>
+                                    </div>
+                                    <div id="modal01" class="w3-modal">
+                                        <div class="w3-content w3-container w3-animate-zoom">
+                                          <header class="w3-container w3-light-gray"> 
+                                            <span onclick="document.getElementById('modal01').style.display='none'" 
+                                            class="w3-button w3-right">&times;</span>
+                                            <h2>Modal Header</h2>
+                                          </header>
+                                          <div class="w3-container">
+                                            <p>Some text..</p>
+                                            <p>Some text..</p>
+                                          </div>
+                                          <footer class="w3-container w3-light-gray">
+                                            <p>Modal Footer</p>
+                                          </footer>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="w3-white w3-xlarge w3-padding-16">
@@ -274,7 +290,7 @@
 
         <!-- Contact Section -->
         <div class="w3-light-gray w3-padding-top-32">
-            <div class="w3-content" style="min-width:70%;" id="contatti">
+            <div class="w3-content w3-container" style="min-width:70%;" id="contatti">
                 <h3 class="w3-wide w3-xxlarge w3-center"><b>SCRIVICI O VIENI A TROVARCI</span></b></h3>
                 <div class="w3-row w3-container w3-padding-top-32">
                     <div class="w3-half w3-container">
@@ -282,27 +298,29 @@
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.6772495104974!2d11.8557108157972!3d45.476305140656336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477ed729d36d82f3%3A0x35ab15a4051b10d4!2sKilometri%20%26%20Miglia%20-%20Agenzia%20Pratiche%20Auto!5e0!3m2!1sen!2sit!4v1679197920162!5m2!1sen!2sit" style="position: absolute; border:0; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
-                    <div class="w3-half w3-container w3-xlarge">
-                        <div class="w3-row">
-                            <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Via Guglielmo Marconi 35, Saletto di Vigodarzere, Padova, Italia<br>
-                            <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Telefono: +39 049 884 1873<br>
-                            <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: info@kilometriemiglia.it<br>
-                            <form method="post" name="contact_form" action="/php/contact-form-handler.php" target="_blank">
-                                <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                                    <div class="w3-half">
-                                        <input class="w3-input w3-border" type="text" placeholder="Nome" required name="name">
-                                    </div>
-                                    <div class="w3-half">
-                                        <input class="w3-input w3-border" type="text" placeholder="Cognome" required name="surname">
-                                    </div>
+                    <div class="w3-half w3-xlarge">
+                        <a class="w3-row" style="font-size: 80%;" href="https://goo.gl/maps/zbTsHMPdwMhprvQz8" target="_blank" rel="noopener noreferrer"><i class="fa fa-map-marker fa-fw w3-margin-right"></i>Guglielmo Marconi 35, Saletto di Vigodarzere, Padova, Italia</a>
+                        <a class="w3-row" style="font-size: 80%;" href="tel:+390498841873"><i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Telefono: +39 049 884 1873</a>
+                        <a class="w3-row" style="font-size: 80%;" href="mailto:info@kilometriemiglia.it"><i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: info@kilometriemiglia.it</a>
+                        <form method="post" name="contact_form" action="/php/contact-form-handler.php" target="_blank" rel="noopener noreferrer">
+                            <div class="w3-row" style="margin-bottom:8px">
+                                <div class="w3-half">
+                                    <input class="w3-input w3-border" type="text" placeholder="Nome" required name="name">
                                 </div>
+                                <div class="w3-half">
+                                    <input class="w3-input w3-border" type="text" placeholder="Cognome" required name="surname">
+                                </div>
+                            </div>
+                            <div class="w3-row" style="margin-bottom: 8px;">
                                 <input class="w3-input w3-border" type="text" placeholder="Email" required name="email">
-                                <input class="w3-input w3-border" type="text" placeholder="Messaggio" required name="message">
-                                <button class="w3-btn-main w3-black w3-right w3-section w3-medium" type="submit" value="Submit">
-                                    <i class="fa fa-paper-plane"></i> INVIA MESSAGGIO
-                                </button>
-                            </form>
-                        </div>
+                            </div>
+                            <div class="w3-row">
+                                <textarea class="w3-input w3-border" style="resize: vertical;" placeholder="Messaggio" required name="message"></textarea>
+                            </div>
+                            <button class="w3-btn-main w3-black w3-right w3-section w3-medium" type="submit" value="Submit">
+                                <i class="fa fa-paper-plane"></i> INVIA MESSAGGIO
+                            </button>
+                        </form>
                     </div>
                 </div>    
             </div>
