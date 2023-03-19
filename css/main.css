@@ -312,35 +312,24 @@ html {
 
 /*HERO IMAGE*/
 /* Create a Parallax Effect */
-.hero-img-1, .hero-img-2, .hero-img-3 , .hero-img-4{
-  background-attachment: fixed;
+.hero-img-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/hero-image-home.jpg");
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
-/* First image (Home. Full height) */
-.hero-img-1 {
-  min-height: 100%;
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
-/* Second image (Chi Siamo. Full height) */
-.hero-img-2 {
-  background-image: url("/w3images/parallax2.jpg");
-  min-height: 400px;
-}
-
-/* Third image (Servizi. Full height) */
-.hero-img-3 {
-  /*background-image: url("/w3images/parallax3.jpg");*/
-  min-height: 400px;
-}
-
-/* Fourth image (Contatti. Full height) */
-.hero-img-4 {
-  background-image: url("/w3images/parallax3.jpg");
-  min-height: 400px;
-}
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
@@ -352,17 +341,17 @@ html {
 
 /*BUTTONS*/
 .w3-btn-main {
-  position: relative;
-  display: inline-block;
   border-radius: 4px;
   background-color: #000;
   border: none;
-  color: #fff;
+  color: #FFFFFF;
   text-align: center;
   font-size: 28px;
-  width: 40%;
+  padding: 10px;
+  width: 200px;
   transition: all 0.5s;
   cursor: pointer;
+  margin: 5px;
 }
   
 .w3-btn-main span {

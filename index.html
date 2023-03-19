@@ -10,41 +10,48 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
         <script type="text/javascript" src="js/scripts.js"></script>
+        <script type="application/ld+json">{"@context": "https://schema.org","@type": "Organization","name": "Kilometri&Miglia","hasMap":"https://goo.gl/maps/kq7gGMPVkZZCBsEs7"}</script>
         <title>Kilometri&Miglia</title>
     </head>
     <body>
         <!-- Navbar (sit on top) -->
         <div class="w3-top">
-            <div class="w3-bar w3-white w3-opacity-min w3-animate-top" id="myNavbar">
-                <div class="w3-right w3-xlarge">
+            <div class="w3-bar w3-white w3-opacity-min w3-animate-top w3-xlarge" id="myNavbar">
+                <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-text-magneto" style="margin-left: 30px;"><b>K&A</b></a>
+                <div class="w3-right">
                     <a class="w3-bar-item w3-button w3-right w3-hover-black w3-hide-medium w3-hide-large" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
                     <i class="fa fa-bars"></i>
                     </a>
                     <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-hover-bottombar">HOME</a>
-                    <a href="#chi-siamo" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-hover-bottombar">CHI SIAMO</a>
                     <a href="#servizi" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-hover-bottombar">SERVIZI</a>
+                    <a href="#chi-siamo" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-hover-bottombar">CHI SIAMO</a>
                     <a href="#contatti" class="w3-bar-item w3-button w3-hide-small  w3-hover-none w3-hover-bottombar">CONTATTI</a>
                 </div>
             </div>
         
             <!-- Navbar on small screens -->
-            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-                <a href="#chi-siamo" class="w3-bar-item w3-button" onclick="toggleFunction()">CHI SIAMO</a>
-                <a href="#servizi" class="w3-bar-item w3-button" onclick="toggleFunction()">SERVIZI</a>
-                <a href="#contatti" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTATTI</a>
+            <div id="navDemo" class="w3-bar-block w3-opacity-min w3-black w3-hide w3-hide-large w3-hide-medium">
+                <ul class="w3-ul">
+                    <li><a href="#servizi" class="w3-bar-item w3-button" onclick="toggleFunction()">SERVIZI</a></li>
+                    <li><a href="#chi-siamo" class="w3-bar-item w3-button" onclick="toggleFunction()">CHI SIAMO</a></li>
+                    <li><a href="#contatti" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTATTI</a></li>
+                    <li><a href="tel:+390498841873" class="w3-bar-item w3-button" onclick="toggleFunction()">CHIAMACI</a></li>
+                </ul>
             </div>
         </div>
     
         <!-- Page content -->
 
         <!-- First Parallax Image with Logo Text -->
-        <header class="hero-img-1 w3-display-container" style="background-image: url('/assets/img/hero-image-home.jpg');" id="home">
-            <div class="w3-display-middle w3-center w3-mobile">
+        <header class="hero-img-1" id="home">
+            <div class="hero-text w3-cell-row">
                 <h1>
-                    <span class="w3-padding w3-black w3-wide w3-hide-small">KILOMETRI&MIGLIA</span>
-                    <span class="w3-padding w3-black w3-wide w3-hide-medium w3-hide-large w3-xlarge">KILOMETRI&MIGLIA</span>
+                    <span class="w3-padding w3-black w3-wide w3-hide-small w3-text-magneto">Kilometri&Miglia</span>
+                    <span class="w3-padding w3-black w3-wide w3-hide-medium w3-text-magneto w3-hide-large w3-large">Kilometri&Miglia</span>
                 </h1>
-                <h3><span class="w3-padding w3-black w3-hide-small"> Pratiche auto, veicoli storici, noleggio con conducente e molto altro.</span></h3>
+                <h3>
+                    <span class="w3-padding w3-black w3-hide-small"> Pratiche auto, motocicli, ciclomotori,veicoli storici, noleggio con conducente e molto altro.</span>
+                </h3>
                 <a href="#servizi" class="w3-btn-main"><span>ESPLORA</span></a>
             </div>
         </header>
@@ -148,12 +155,10 @@
             </div>
         </div>
 
-        
-
         <!-- Hours Section -->
-        <div class="w3-content w3-padding-top-32 w3-center" style="min-width:70%; margin-bottom: 64px;" id="orari">
+        <div class="w3-content w3-padding-top-32 w3-center" style="min-width:70%; margin-bottom: 32px;" id="orari">
             <div class="w3-row">
-                <h3 class="w3-wide w3-xxlarge w3-margin-left"><b>ORARI<span class="w3-hide-small"> DI APERTURA</span></b></h3>
+                <h3 class="w3-wide w3-xxlarge"><b>ORARI<span class="w3-hide-small"> DI APERTURA</span></b></h3>
                 <div class="w3-half w3-container">
                     <div class="w3-large">
                         <b>
@@ -165,14 +170,14 @@
                     </div>
                 </div>
                 <div class="w3-half w3-container w3-padding-top-64">
-                    <a href="#contatti" class="w3-center w3-btn-main" style="min-width: 70%;"><span>CONTATTACI</span></a>
+                    <a href="#contatti" class="w3-center w3-btn-main"><span>CONTATTACI</span></a>
                 </div>
             </div>      
         </div>
 
-        <!-- Hours Section -->
-        <div class="w3-light-gray" >
-            <div class="w3-content w3-center w3-padding-top-32" style="min-width:70%; margin-bottom: 64px;" id="orari">
+        <!-- Quote Section -->
+        <div class="w3-yellow">
+            <div class="w3-content w3-center w3-padding-top-32" style="min-width:70%;" id="orari">
                 <div class="w3-mobile w3-panel">
                     <span style="font-size:150px;line-height:0.6em;opacity:0.2">❝</span>
                     <p class="w3-xlarge" style="margin-top:-40px; margin-bottom: -20px;">
@@ -184,6 +189,82 @@
                 </div> 
             </div>
         </div>
+
+        <!-- About Section -->
+        <div class="w3-content w3-center" style="min-width:70%; padding-bottom: 32px;" id="chi-siamo">
+            <div class="w3-container">
+                <h3 class="w3-wide w3-xxlarge"><b>CHI SIAMO</span></b></h3>
+                <p class="w3-text-gray w3-hide-small w3-margin" style="text-align:left; font-size: 18px;">
+                    Siamo un'agenzia di pratiche auto, localizzata a Saletto di Vigodarzere in Provincia di Padova, che si occupa di tutti i tipi di pratiche veicoli:
+                    immatricolazioni e reimmatricolazioni, passaggi di proprietà, duplicati, collaudi, revisioni, radiazioni e molte altre. <br/>
+                    Gestiamo anche le pratiche patenti, fornendo rinnovi, duplicati, riclassificazioni e conversioni.<br/>
+                    Se possiedi un ciclomotore o un motociclo, non preoccuparti: copriamo tutte le tue esigenze: ritargatura, passaggi, sospensioni, reimmatricolazioni,
+                    duplicati e radiazioni.<br/>
+                    Siamo anche specializzati in iscrizioni ai registri storici ASI, FMI e FIAT, garantendo la massima precisione e la competenza necessaria per questo tipo
+                    di pratiche. <br/>
+                    Infine, offriamo anche vari servizi di collaudo e revisione, tra cui: inserimento dei telai in archivio, prenotazione di sedute presso la Motorizzazione 
+                    e sedute esterne. <br/>
+                    Siamo un'azienda seria, professionale e affidabile, che mette al centro del proprio lavoro la soddisfazione del cliente. <br/>
+                    Grazie alla nostra vasta esperienza nel settore, siamo in grado di offrire un servizio di altissima qualità, garantendo la massima efficienza e puntualità.<br/>
+                    Scegli noi per tutte le tue pratiche auto e moto e non te ne pentirai!
+                </p>
+                <p class="w3-text-gray w3-hide-medium w3-hide-large" style="text-align: left; font-size: 18px;">
+                    Siamo un'agenzia di pratiche auto, localizzata a Saletto di Vigodarzere in Provincia di Padova, che si occupa delle pratiche di: veicoli, ciclomotori e 
+                    motocicli (immatricolazioni, reimmatricolazioni, passaggi di proprietà, duplicati, collaudi, revisioni, radiazioni), patenti (rinnovi, duplicati, 
+                    riclassificazioni, conversioni) e iscrizioni a registri storici ASI, FMI e FIAT.
+                </p>
+            </div>
+            <div class="w3-row w3-container">
+                <div class="w3-half w3-container w3-hide-small">
+                    <img src="/assets/img/hero-image-home.jpg" class="w3-round w3-image" width="600px" alt="Photo of Me">
+                </div>
+                <div class="w3-half w3-container">
+                    <p class="w3-text-gray" style="text-align:left; font-size: 20px;">
+                        <em><b>Sai di aver diritto ad uno sconto sul bollo dell'auto se la iscrivi al registro storico? Non perdere l'occasione e contattaci subito!</b></em>
+                    </p>
+                    <a href="#contatti" class="w3-center w3-btn-main"><span>CONTATTACI</span></a>
+                </div>
+            </div>    
+        </div>
+
+        <!-- Contact Section -->
+        <div class="w3-light-gray w3-padding-top-32">
+            <div class="w3-content" style="min-width:70%;" id="contatti">
+                <h3 class="w3-wide w3-xxlarge w3-center"><b>SCRIVICI O VIENI A TROVARCI</span></b></h3>
+                <div class="w3-row w3-container">
+                    <div class="w3-half w3-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.6772495104974!2d11.8557108157972!3d45.476305140656336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477ed729d36d82f3%3A0x35ab15a4051b10d4!2sKilometri%20%26%20Miglia%20-%20Agenzia%20Pratiche%20Auto!5e0!3m2!1sen!2sit!4v1679197920162!5m2!1sen!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="w3-half w3-container w3-xlarge">
+                        <div class="w3-row w3-padding-top-64">
+                            <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Via Guglielmo Marconi 35, Saletto di Vigodarzere, Padova, Italia<br>
+                            <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Telefono: +39 049 884 1873<br>
+                            <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: kilometriemiglia@info.it<br>
+                            <form method="post" name="contact_form" action="/php/contact-form-handler.php">
+                                <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                                    <div class="w3-half">
+                                        <input class="w3-input w3-border" type="text" placeholder="Nome" required name="name">
+                                    </div>
+                                    <div class="w3-half">
+                                        <input class="w3-input w3-border" type="text" placeholder="Cognome" required name="surname">
+                                    </div>
+                                </div>
+                                <input class="w3-input w3-border" type="text" placeholder="Email" required name="email">
+                                <input class="w3-input w3-border" type="text" placeholder="Messaggio" required name="message">
+                                <button class="w3-btn-main w3-black w3-right w3-section w3-medium" type="submit" value="Submit">
+                                    <i class="fa fa-paper-plane"></i> INVIA MESSAGGIO
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="w3-center w3-black w3-padding-16">
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+        </footer>
 
     </body>
 </html>
