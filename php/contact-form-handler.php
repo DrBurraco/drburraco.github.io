@@ -1,13 +1,15 @@
 <?php
     $errors = '';
-    $myemail = '';//<-----Put Your email address here.
+    $myemail = 'info@kilometriemiglia.it';//<-----Put Your email address here.
     if(empty($_POST['name'])  ||
+       empty($_POST['surname'])  ||
        empty($_POST['email']) ||
        empty($_POST['message']))
     {
         $errors .= "\n Error: all fields are required";
     }
     $name = $_POST['name'];
+    $name = $_POST['surname'];
     $email_address = $_POST['email'];
     $message = $_POST['message'];
     if (!preg_match(
@@ -17,17 +19,17 @@
         $errors .= "\n Error: Invalid email address";
     }
     
-    if( empty($errors))
+    if(empty($errors))
     {
-    $to = $myemail;
-    $email_subject = "Contact form submission: $name";
-    $email_body = "You have received a new message. ".
-    " Here are the details:\n Name: $name \n ".
-    "Email: $email_address\n Message \n $message";
-    $headers = "From: $myemail\n";
-    $headers .= "Reply-To: $email_address";
-    mail($to,$email_subject,$email_body,$headers);
-    //redirect to the 'thank you' page
-    header('Location: contact-form-thank-you.html');
+        $to = $myemail;
+        $email_subject = "Messaggio dal sito, inviato da: $name $surname";
+        $email_body = "Hai ricevuto un nuovo messaggio. ".
+        " Ecco i dettagli:\n Nome e Cognome: $name $surname \n ".
+        "Email: $email_address\n Messaggio \n $message";
+        $headers = "From: $myemail\n";
+        $headers .= "Reply-To: $email_address";
+        mail($to,$email_subject,$email_body,$headers);
+        //redirect to the 'thank you' page
+        header('Location: /pages/ringraziamento-form-contatti.html');
     }
 ?>
