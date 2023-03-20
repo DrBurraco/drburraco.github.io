@@ -276,6 +276,7 @@ html {
   transform: scale(1);
 }
 
+
 /*SERVICES*/
 .w3-container-overlay {
   position: relative;
@@ -309,12 +310,18 @@ html {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+.w3-tooltip #w3-hover-icon{
+  transition: transform 1s ease 0s;
+}
 
+.w3-tooltip:hover #w3-hover-icon{
+  transform: rotate(180deg);
+}
 /*HERO IMAGE*/
 /* Create a Parallax Effect */
 .hero-img-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/hero-image-home.jpg");
-  height: 100%;
+  background-image: url("/assets/img/hero-image-home.jpg");
+  min-height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

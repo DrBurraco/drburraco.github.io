@@ -41,16 +41,21 @@
         <!-- Page content -->
 
         <!-- First Parallax Image with Logo Text -->
-        <header class="hero-img-1" id="home">
-            <div class="hero-text w3-cell-row">
-                <h1>
-                    <span class="w3-padding w3-black w3-wide w3-hide-small w3-text-magneto">Kilometri&Miglia</span>
-                    <span class="w3-padding w3-black w3-wide w3-hide-medium w3-text-magneto w3-hide-large w3-large">Kilometri&Miglia</span>
-                </h1>
-                <h2 class="w3-padding">
+        <header class="w3-display-container" id="home">
+            <img class="w3-image w3-opacity-max" src="/assets/img/hero-image-home.jpg">
+            <div class="w3-display-middle w3-center">
+                <div class="w3-row">
+                    <h1 class="w3-jumbo w3-padding" style="white-space:nowrap;">
+                        <span class="w3-padding w3-wide w3-hide-small w3-text-magneto w3-opacity-off" style="border-color: black; border-style: solid; border-left: 0px; border-right: 0px;">Kilometri&Miglia</span>
+                        <span class="w3-padding w3-wide w3-text-magneto w3-opacity-off w3-hide-medium w3-text-magneto w3-hide-large w3-xlarge" style="border-color: black; border-style: solid; border-left: 0px; border-right: 0px;">Kilometri&Miglia</span>
+                    </h1>
+                </div>
+                <!-- <h2 class="w3-padding">
                     <span class="w2-padding w3-black w3-hide-small"> Pratiche auto, motocicli, ciclomotori,veicoli storici, noleggio con conducente e molto altro.</span>
-                </h2>
-                <a href="#servizi" class="w3-btn-main"><span>ESPLORA</span></a>
+                </h2> -->
+                <div class="w3-row" style="margin-top:30px;">
+                    <a href="#servizi" class="w3-btn-main"><span>ESPLORA</span></a>
+                </div>
             </div>
         </header>
 
@@ -61,17 +66,17 @@
                     <h3 class="w3-wide w3-xxlarge"><b><span class="w3-hide-small">I NOSTRI </span>SERVIZI</b></h3>
                     <h3 class="w3-wide w3-left w3-container">PRATICHE <b>STANDARD</b></h3>
                     <div class="w3-row-padding">
-                        <div class="w3-third w3-padding">
+                        <div class="w3-third w3-padding" onclick="document.getElementById('modal').style.display='block'">
                             <div class="w3-display-container">
                                 <div class="w3-container-overlay">
                                     <img src="/assets/img/servizi/pratiche-veicoli.jpg" class="w3-image" alt="Pratica Veicolo">
-                                    <div class="w3-service-overlay" onclick="document.getElementById('modal01').style.display='block'">
+                                    <div class="w3-service-overlay">
                                         <div class="w3-service-overlay-text w3-xxxlarge" >+</div>
                                     </div>
-                                    <div id="modal01" class="w3-modal">
+                                    <div id="modal" class="w3-modal">
                                         <div class="w3-container w3-animate-zoom">
                                           <header class="w3-container w3-light-gray">
-                                            <span onclick="document.getElementById('modal01').style.display='none'" class="w3-button w3-right">&times;</span>
+                                            <span onclick="document.getElementById('modal').style.display='none'" class="w3-button w3-right">&times;</span>
                                             <h2>Modal Header</h2>
                                           </header>
                                           <div class="w3-container w3-white">
@@ -84,23 +89,25 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w3-white w3-xlarge w3-padding-16">
-                                    <h4><b>Pratiche Veicoli</b></h4>
-                                    <span class="w3-medium w3-padding">Immatricolazioni e Reimmatricolazioni, Passaggi di proprietà, Duplicati, Collaudi e Revisioni, Radiazioni</span>
-                                </div>
+                            </div>
+                            <div class="w3-white w3-xlarge w3-padding">
+                                <p class="w3-tooltip">
+                                    <b>Pratiche Veicoli <i class="fa fa-chevron-up" id="w3-hover-icon"></i></b>
+                                    <span class="w3-medium w3-text w3-animate-zoom">Immatricolazioni e Reimmatricolazioni, Passaggi di proprietà, Duplicati, Collaudi e Revisioni, Radiazioni</span>
+                                </p>
                             </div>
                         </div>
                         <div class="w3-third w3-padding">
                             <div class="w3-display-container">
                                 <div class="w3-container-overlay">
                                     <img src="/assets/img/servizi/patente-di-guida.jpg" class="w3-image" alt="Patente di Guida">
-                                    <div class="w3-service-overlay" onclick="document.getElementById('modal02').style.display='block'">
+                                    <div class="w3-service-overlay" onclick="document.getElementById('modal').style.display='block'">
                                         <div class="w3-service-overlay-text w3-xxxlarge" >+</div>
                                     </div>
-                                    <div id="modal02" class="w3-modal">
+                                    <div id="modal" class="w3-modal">
                                         <div class="w3-container w3-animate-zoom">
                                           <header class="w3-container w3-light-gray">
-                                            <span onclick="document.getElementById('modal02').style.display='none'" class="w3-button w3-right">&times;</span>
+                                            <span onclick="document.getElementById('modal').style.display='none'" class="w3-button w3-right">&times;</span>
                                             <h2>Modal Header</h2>
                                           </header>
                                           <div class="w3-container w3-white">
@@ -113,10 +120,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w3-white w3-xlarge w3-padding-16">
-                                    <h4><b>Pratiche Patenti</b></h4>
-                                    <span class="w3-medium w3-padding">Rinnovi, Duplicati, Riclassificazioni, Conversioni</span>
-                                </div>
+                            </div>
+                            <div class="w3-white w3-xlarge w3-padding">
+                                <p class="w3-tooltip">
+                                    <b>Pratiche Patenti <i class="fa fa-chevron-up" id="w3-hover-icon"></i></b>
+                                    <span class="w3-medium w3-text w3-animate-zoom">Rinnovi, Duplicati, Riclassificazioni, Conversioni</span>
+                                </p>
                             </div>
                         </div>
                         <div class="w3-third w3-padding">
@@ -142,19 +151,21 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w3-white w3-xlarge w3-padding-16">
-                                    <h4><b>Pratiche Ciclomotori</b></h4>
-                                    <span class="w3-medium w3-padding">Ritargatura, Passaggi, Sospensioni, Reimmatricolazioni, Duplicati, Radiazioni</span>
-                                </div>
+                            </div>
+                            <div class="w3-white w3-xlarge w3-padding">
+                                <p class="w3-tooltip">
+                                    <b>Pratiche Ciclomotori <i class="fa fa-chevron-up" id="w3-hover-icon"></i></b>
+                                    <span class="w3-medium w3-text w3-animate-zoom">Ritargatura, Passaggi, Sospensioni, Reimmatricolazioni, Duplicati, Radiazioni</span>
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="w3-row-padding">
-                        <div class="w3-third w3-padding">
+                        <div class="w3-third w3-padding" onclick="document.getElementById('modal09').style.display='block'">
                             <div class="w3-display-container">
                                 <div class="w3-container-overlay">
                                     <img src="/assets/img/servizi/trasporto-merci.jpg" class="w3-image" alt="Furgone Carica Merci">
-                                    <div class="w3-service-overlay" onclick="document.getElementById('modal09').style.display='block'">
+                                    <div class="w3-service-overlay" >
                                         <div class="w3-service-overlay-text w3-xxxlarge" >+</div>
                                     </div>
                                     <div id="modal09" class="w3-modal">
@@ -173,10 +184,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w3-white w3-xlarge w3-padding-16">
-                                    <h4><b>Pratiche Trasporto Merci</b></h4>
-                                    <span class="w3-medium">Per conto terzi e Per conto proprio</span>
-                                </div>
+                            </div>
+                            <div class="w3-white w3-xlarge w3-padding">
+                                <p class="w3-tooltip">
+                                    <b>Pratiche Trasporto Merci <i class="fa fa-chevron-up" id="w3-hover-icon"></i></b>
+                                    <span class="w3-medium w3-text w3-animate-zoom">Per conto terzi e Per conto proprio</span>
+                                </p>
                             </div>
                         </div>
                     </div>
