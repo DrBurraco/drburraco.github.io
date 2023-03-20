@@ -1,49 +1,466 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Kilometri&Miglia</title>
-</head>
-<body class="w3-mobile w3-yellow w3-text-josefin-sans">
-    <div class="w3-hero-image w3-grayscale">
-        <header class="w3-row w3-xxlarge w3-padding-16">
-            <div class="w3-bar">
-                <div class="w3-col s3">
-                    <a href="#" class="w3-bar-item"><img href="#" src="/assets/img/placeholder-logo.png" class="w3-round" style="width: 150px;" alt="Logo"></a>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kilometri&Miglia</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top">
+            <div class="w3-bar w3-white w3-opacity-min w3-animate-top w3-xlarge" id="myNavbar">
+                <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-text-magneto" style="margin-left: 30px;"><b>K&M</b></a>
+                <div class="w3-right">
+                    <a class="w3-bar-item w3-button w3-right w3-hover-black w3-hide-medium w3-hide-large" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                    <i class="fa fa-bars"></i>
+                    </a>
+                    <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-hover-bottombar">HOME</a>
+                    <a href="#servizi" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-hover-bottombar">SERVIZI</a>
+                    <a href="#chi-siamo" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-hover-bottombar">CHI SIAMO</a>
+                    <a href="#contatti" class="w3-bar-item w3-button w3-hide-small  w3-hover-none w3-hover-bottombar">CONTATTI</a>
                 </div>
-                <div class="w3-col s9 w3-text-black">
-                    <div href="#" class="w3-bar-item w3-right w3-button w3-hover-none w3-hover-text-white w3-hover-bottombar w3-margin-right">Contatti</div>
-                    <div href="#" class="w3-bar-item w3-right w3-button w3-hover-none w3-hover-text-white w3-hover-bottombar">Servizi</div>
-                    <div href="#" class="w3-bar-item w3-right w3-button w3-hover-none w3-hover-text-white w3-hover-bottombar">Chi Siamo</div>
-                    <div href="#" class="w3-bar-item w3-right w3-button w3-hover-none w3-hover-text-white w3-hover-bottombar">Home</div>
-                </div>
+            </div>
+        
+            <!-- Navbar on small screens -->
+            <div id="navDemo" class="w3-bar-block w3-opacity-min w3-black w3-hide w3-hide-large w3-hide-medium">
+                <ul class="w3-ul">
+                    <li><a href="#servizi" class="w3-bar-item w3-button" onclick="toggleFunction()">SERVIZI</a></li>
+                    <li><a href="#chi-siamo" class="w3-bar-item w3-button" onclick="toggleFunction()">CHI SIAMO</a></li>
+                    <li><a href="#contatti" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTATTI</a></li>
+                    <li><a href="tel:+390498841873" class="w3-bar-item w3-button" onclick="toggleFunction()">CHIAMACI</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Page content -->
+
+        <!-- First Parallax Image with Logo Text -->
+        <header class="hero-img-1" id="home">
+            <div class="hero-text w3-cell-row">
+                <h1>
+                    <span class="w3-padding w3-black w3-wide w3-hide-small w3-text-magneto">Kilometri&Miglia</span>
+                    <span class="w3-padding w3-black w3-wide w3-hide-medium w3-text-magneto w3-hide-large w3-large">Kilometri&Miglia</span>
+                </h1>
+                <h2 class="w3-padding">
+                    <span class="w2-padding w3-black w3-hide-small"> Pratiche auto, motocicli, ciclomotori,veicoli storici, noleggio con conducente e molto altro.</span>
+                </h2>
+                <a href="#servizi" class="w3-btn-main"><span>ESPLORA</span></a>
             </div>
         </header>
-        <div class="w3-main w3-center w3-padding-64">
-            <div class="w3-row w3-padding-top-64">
-                <div class="w3-padding-top-64">
-                    <h1 class="w3-text-magneto w3-text-grey w3-xxxlarge">Kilometri&Miglia</h1>
-                </div>
-                <div class="w3-padding-top-16">
-                    <h2 class="w3-xlarge">Pratiche auto, veicoli storici, noleggio con conducente e molto altro.</h2>
-                </div>
-                <div class="w3-padding-top-32">
-                    <div class="w3-btn-main">
-                        <span>SCOPRI DI PIÙ</span>
-                    <div>
+
+        <!-- Services Section -->
+        <div class="w3-light-gray">
+            <div class="w3-content w3-center w3-padding-top-64" style="min-width:70%" id="servizi">
+                <div class="w3-container">
+                    <h3 class="w3-wide w3-xxlarge"><b><span class="w3-hide-small">I NOSTRI </span>SERVIZI</b></h3>
+                    <h3 class="w3-wide w3-left w3-container">PRATICHE <b>STANDARD</b></h3>
+                    <div class="w3-row-padding">
+                        <div class="w3-third w3-padding">
+                            <div class="w3-display-container">
+                                <div class="w3-container-overlay">
+                                    <img src="/assets/img/servizi/pratiche-veicoli.jpg" class="w3-image" alt="Pratica Veicolo">
+                                    <div class="w3-service-overlay" onclick="document.getElementById('modal01').style.display='block'">
+                                        <div class="w3-service-overlay-text w3-xxxlarge" >+</div>
+                                    </div>
+                                    <div id="modal01" class="w3-modal">
+                                        <div class="w3-container w3-animate-zoom">
+                                          <header class="w3-container w3-light-gray">
+                                            <span onclick="document.getElementById('modal01').style.display='none'" class="w3-button w3-right">&times;</span>
+                                            <h2>Modal Header</h2>
+                                          </header>
+                                          <div class="w3-container w3-white">
+                                            <p>Some text..</p>
+                                            <p>Some text..</p>
+                                          </div>
+                                          <footer class="w3-container w3-light-gray">
+                                            <p>Modal Footer</p>
+                                          </footer>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w3-white w3-xlarge w3-padding-16">
+                                    <h4><b>Pratiche Veicoli</b></h4>
+                                    <span class="w3-medium w3-padding">Immatricolazioni e Reimmatricolazioni, Passaggi di proprietà, Duplicati, Collaudi e Revisioni, Radiazioni</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w3-third w3-padding">
+                            <div class="w3-display-container">
+                                <div class="w3-container-overlay">
+                                    <img src="/assets/img/servizi/patente-di-guida.jpg" class="w3-image" alt="Patente di Guida">
+                                    <div class="w3-service-overlay" onclick="document.getElementById('modal02').style.display='block'">
+                                        <div class="w3-service-overlay-text w3-xxxlarge" >+</div>
+                                    </div>
+                                    <div id="modal02" class="w3-modal">
+                                        <div class="w3-container w3-animate-zoom">
+                                          <header class="w3-container w3-light-gray">
+                                            <span onclick="document.getElementById('modal02').style.display='none'" class="w3-button w3-right">&times;</span>
+                                            <h2>Modal Header</h2>
+                                          </header>
+                                          <div class="w3-container w3-white">
+                                            <p>Some text..</p>
+                                            <p>Some text..</p>
+                                          </div>
+                                          <footer class="w3-container w3-light-gray">
+                                            <p>Modal Footer</p>
+                                          </footer>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w3-white w3-xlarge w3-padding-16">
+                                    <h4><b>Pratiche Patenti</b></h4>
+                                    <span class="w3-medium w3-padding">Rinnovi, Duplicati, Riclassificazioni, Conversioni</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w3-third w3-padding">
+                            <div class="w3-display-container">
+                                <div class="w3-container-overlay">
+                                    <img src="/assets/img/servizi/pratiche-ciclomotori.jpg" class="w3-image" alt="Innocenti Lui Colore Celeste">
+                                    <div class="w3-service-overlay" onclick="document.getElementById('modal03').style.display='block'">
+                                        <div class="w3-service-overlay-text w3-xxxlarge" >+</div>
+                                    </div>
+                                    <div id="modal03" class="w3-modal">
+                                        <div class="w3-container w3-animate-zoom">
+                                          <header class="w3-container w3-light-gray">
+                                            <span onclick="document.getElementById('modal03').style.display='none'" class="w3-button w3-right">&times;</span>
+                                            <h2>Modal Header</h2>
+                                          </header>
+                                          <div class="w3-container w3-white">
+                                            <p>Some text..</p>
+                                            <p>Some text..</p>
+                                          </div>
+                                          <footer class="w3-container w3-light-gray">
+                                            <p>Modal Footer</p>
+                                          </footer>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w3-white w3-xlarge w3-padding-16">
+                                    <h4><b>Pratiche Ciclomotori</b></h4>
+                                    <span class="w3-medium w3-padding">Ritargatura, Passaggi, Sospensioni, Reimmatricolazioni, Duplicati, Radiazioni</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-row-padding">
+                        <div class="w3-third w3-padding">
+                            <div class="w3-display-container">
+                                <div class="w3-container-overlay">
+                                    <img src="/assets/img/servizi/trasporto-merci.jpg" class="w3-image" alt="Furgone Carica Merci">
+                                    <div class="w3-service-overlay" onclick="document.getElementById('modal09').style.display='block'">
+                                        <div class="w3-service-overlay-text w3-xxxlarge" >+</div>
+                                    </div>
+                                    <div id="modal09" class="w3-modal">
+                                        <div class="w3-container w3-animate-zoom">
+                                        <header class="w3-container w3-light-gray">
+                                            <span onclick="document.getElementById('modal09').style.display='none'" class="w3-button w3-right">&times;</span>
+                                            <h2>Modal Header</h2>
+                                        </header>
+                                        <div class="w3-container w3-white">
+                                            <p>Some text..</p>
+                                            <p>Some text..</p>
+                                        </div>
+                                        <footer class="w3-container w3-light-gray">
+                                            <p>Modal Footer</p>
+                                        </footer>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w3-white w3-xlarge w3-padding-16">
+                                    <h4><b>Pratiche Trasporto Merci</b></h4>
+                                    <span class="w3-medium">Per conto terzi e Per conto proprio</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="w3-wide w3-left w3-container">PRATICHE <b>VEICOLI STORICI</b></h3>
+                    <div class="w3-row-padding">
+                        <div class="w3-third w3-padding">
+                            <div class="w3-display-container">
+                                <div class="w3-container-overlay">
+                                    <img src="/assets/img/servizi/iscrizione-veicolo-storico.jpg" class="w3-image" alt="Random Name">
+                                    <div class="w3-service-overlay" onclick="document.getElementById('modal04').style.display='block'">
+                                        <div class="w3-service-overlay-text w3-xxxlarge" >+</div>
+                                    </div>
+                                    <div id="modal04" class="w3-modal">
+                                        <div class="w3-container w3-animate-zoom">
+                                          <header class="w3-container w3-light-gray">
+                                            <span onclick="document.getElementById('modal04').style.display='none'" class="w3-button w3-right">&times;</span>
+                                            <h2>Modal Header</h2>
+                                          </header>
+                                          <div class="w3-container w3-white">
+                                            <p>Some text..</p>
+                                            <p>Some text..</p>
+                                          </div>
+                                          <footer class="w3-container w3-light-gray">
+                                            <p>Modal Footer</p>
+                                          </footer>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w3-white w3-xlarge w3-padding-16">
+                                    <h4 class="w3-padding"><b>Iscrizioni ai registri storici ASI, FMI e FIAT</b></h4>
+                                    <span class="w3-medium w3-padding">Per la qualifica di "veicolo di interesse storico e collezionisticio" e tutte le agevolazioni previste (bollo e assicurazione)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w3-third w3-padding">
+                            <div class="w3-display-container">
+                                <div class="w3-container-overlay">
+                                    <img src="/assets/img/servizi/reimmatricolazione.jpg" class="w3-image" alt="Random Name">
+                                    <div class="w3-service-overlay" onclick="document.getElementById('modal05').style.display='block'">
+                                        <div class="w3-service-overlay-text w3-xxxlarge" >+</div>
+                                    </div>
+                                    <div id="modal05" class="w3-modal">
+                                        <div class="w3-container w3-animate-zoom">
+                                          <header class="w3-container w3-light-gray">
+                                            <span onclick="document.getElementById('modal05').style.display='none'" class="w3-button w3-right">&times;</span>
+                                            <h2>Modal Header</h2>
+                                          </header>
+                                          <div class="w3-container w3-white">
+                                            <p>Some text..</p>
+                                            <p>Some text..</p>
+                                          </div>
+                                          <footer class="w3-container w3-light-gray">
+                                            <p>Modal Footer</p>
+                                          </footer>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w3-white w3-xlarge w3-padding-16">
+                                    <h4><b>Reimmatricolazioni</b></h4>
+                                    <span class="w3-medium w3-padding">Per la riammissione in circolazione dei veicoli cessati dalla circolazione o di origine sconosciuta</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w3-third w3-padding">
+                            <div class="w3-display-container">
+                                <div class="w3-container-overlay">
+                                    <img src="/assets/img/servizi/collaudo-e-revisione.jpg" class="w3-image" alt="Controllo Olio Motore">
+                                    <div class="w3-service-overlay" onclick="document.getElementById('modal06').style.display='block'">
+                                        <div class="w3-service-overlay-text w3-xxxlarge" >+</div>
+                                    </div>
+                                    <div id="modal06" class="w3-modal">
+                                        <div class="w3-container w3-animate-zoom">
+                                          <header class="w3-container w3-light-gray">
+                                            <span onclick="document.getElementById('modal06').style.display='none'" class="w3-button w3-right">&times;</span>
+                                            <h2>Modal Header</h2>
+                                          </header>
+                                          <div class="w3-container w3-white">
+                                            <p>Some text..</p>
+                                            <p>Some text..</p>
+                                          </div>
+                                          <footer class="w3-container w3-light-gray">
+                                            <p>Modal Footer</p>
+                                          </footer>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w3-white w3-xlarge w3-padding-16">
+                                    <h4><b>Collaudi e Revisioni</b></h4>
+                                    <span class="w3-medium w3-padding">Inserimento Telai in archivio, Prenotazione sedute presso Motorizzazione e sedute esterne</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="w3-wide w3-left w3-container">ALTRI SERVIZI</h3>
+                    <div class="w3-row-padding" style="padding-bottom: 64px;">
+                        <div class="w3-third w3-padding">
+                            <div class="w3-display-container">
+                                <div class="w3-container-overlay">
+                                    <img src="/assets/img/servizi/noleggio-con-conducente.jpg" class="w3-image" alt="Macchina con conducente">
+                                    <div class="w3-service-overlay" onclick="document.getElementById('modal07').style.display='block'">
+                                        <div class="w3-service-overlay-text w3-xxxlarge" >+</div>
+                                    </div>
+                                    <div id="modal07" class="w3-modal">
+                                        <div class="w3-container w3-animate-zoom">
+                                          <header class="w3-container w3-light-gray">
+                                            <span onclick="document.getElementById('modal07').style.display='none'" class="w3-button w3-right">&times;</span>
+                                            <h2>Modal Header</h2>
+                                          </header>
+                                          <div class="w3-container w3-white">
+                                            <p>Some text..</p>
+                                            <p>Some text..</p>
+                                          </div>
+                                          <footer class="w3-container w3-light-gray">
+                                            <p>Modal Footer</p>
+                                          </footer>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w3-white w3-xlarge w3-padding-16">
+                                    <h4><b>Noleggio Con Conducente</b></h4>
+                                    <span class="w3-medium">Hai bisogno di un passaggio? Chiamaci e penseremo a tutto noi</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w3-third w3-padding">
+                            <div class="w3-display-container">
+                                <div class="w3-container-overlay">
+                                    <img src="/assets/img/servizi/consulente.jpg" class="w3-image" alt="Consulente">
+                                    <div class="w3-service-overlay" onclick="document.getElementById('modal08').style.display='block'">
+                                        <div class="w3-service-overlay-text w3-xxxlarge" >+</div>
+                                    </div>
+                                    <div id="modal08" class="w3-modal">
+                                        <div class="w3-container w3-animate-zoom">
+                                          <header class="w3-container w3-light-gray">
+                                            <span onclick="document.getElementById('modal08').style.display='none'" class="w3-button w3-right">&times;</span>
+                                            <h2>Modal Header</h2>
+                                          </header>
+                                          <div class="w3-container w3-white">
+                                            <p>Some text..</p>
+                                            <p>Some text..</p>
+                                          </div>
+                                          <footer class="w3-container w3-light-gray">
+                                            <p>Modal Footer</p>
+                                          </footer>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w3-white w3-xlarge w3-padding-16">
+                                    <h4><b>Hai subito un incidente stradale, un infortunio sul lavoro o credi di essere vittima di un caso di malsanità?</b></h4>
+                                    <span class="w3-medium">Chiamaci ed entro 24 ore ti faremo parlare con i nostri epsperti del settore che ti aiuteranno ad ottenere il miglior riasarcimento nel minor tempo possibile</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-        <div class="w3-row">
 
+        <!-- Hours Section -->
+        <div class="w3-content w3-padding-top-32 w3-center" style="min-width:70%; margin-bottom: 32px;" id="orari">
+            <div class="w3-row">
+                <h3 class="w3-wide w3-xxlarge"><b>ORARI<span class="w3-hide-small"> DI APERTURA</span></b></h3>
+                <div class="w3-half w3-container">
+                    <div class="w3-large">
+                        <b>
+                            <p>LUNEDÌ: 15:30 - 20:00</p>
+                            <p>MARTEDÌ - VENERDÌ: 09:00 - 12:30, 15:30 - 20:00</p>
+                            <p>SABATO: 09:00 - 13:00</p>
+                            <p>DOMENICA: CHIUSI</p>
+                        </b>
+                    </div>
+                </div>
+                <div class="w3-half w3-container w3-padding-top-64">
+                    <a href="#contatti" class="w3-center w3-btn-main"><span>CONTATTACI</span></a>
+                </div>
+            </div>      
         </div>
-    </div>
-</body>
+
+        <!-- Quote Section -->
+        <div class="w3-yellow">
+            <div class="w3-content w3-center w3-padding-top-32" style="min-width:70%;" id="orari">
+                <div class="w3-mobile w3-panel">
+                    <span style="font-size:150px;line-height:0.6em;opacity:0.2">❝</span>
+                    <p class="w3-xlarge" style="margin-top:-40px; margin-bottom: -20px;">
+                        <i>
+                            Non riuscivo a trovare l'auto sportiva dei miei sogni, così l'ho costruita da solo.
+                        </i>
+                        <p class="w3-right w3-large"> - Ferdinand Porsche </p>
+                    </p>
+                </div> 
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="w3-content w3-center" style="min-width:70%; padding-bottom: 32px;" id="chi-siamo">
+            <div class="w3-container">
+                <h3 class="w3-wide w3-xxlarge"><b>CHI SIAMO</span></b></h3>
+                <p class="w3-text-gray w3-hide-small w3-margin" style="text-align:left; font-size: 18px;">
+                    Siamo un'agenzia di pratiche auto, localizzata a Saletto di Vigodarzere in Provincia di Padova, che si occupa di tutti i tipi di pratiche veicoli:
+                    immatricolazioni e reimmatricolazioni, passaggi di proprietà, duplicati, collaudi, revisioni, radiazioni e molte altre. <br/>
+                    Gestiamo anche le pratiche patenti, fornendo rinnovi, duplicati, riclassificazioni e conversioni.<br/>
+                    Se possiedi un ciclomotore o un motociclo, non preoccuparti: copriamo tutte le tue esigenze: ritargatura, passaggi, sospensioni, reimmatricolazioni,
+                    duplicati e radiazioni.<br/>
+                    Siamo anche specializzati in iscrizioni ai registri storici ASI, FMI e FIAT, garantendo la massima precisione e la competenza necessaria per questo tipo
+                    di pratiche. <br/>
+                    Infine, offriamo anche vari servizi di collaudo e revisione, tra cui: inserimento dei telai in archivio, prenotazione di sedute presso la Motorizzazione 
+                    e sedute esterne. <br/>
+                    Siamo un'azienda seria, professionale e affidabile, che mette al centro del proprio lavoro la soddisfazione del cliente. <br/>
+                    Grazie alla nostra vasta esperienza nel settore, siamo in grado di offrire un servizio di altissima qualità, garantendo la massima efficienza e puntualità.<br/>
+                    Scegli noi per tutte le tue pratiche auto e moto e non te ne pentirai!
+                </p>
+                <p class="w3-text-gray w3-hide-medium w3-hide-large" style="text-align: left; font-size: 18px;">
+                    Siamo un'agenzia di pratiche auto, localizzata a Saletto di Vigodarzere in Provincia di Padova, che si occupa delle pratiche di: veicoli, ciclomotori e 
+                    motocicli (immatricolazioni, reimmatricolazioni, passaggi di proprietà, duplicati, collaudi, revisioni, radiazioni), patenti (rinnovi, duplicati, 
+                    riclassificazioni, conversioni) e iscrizioni a registri storici ASI, FMI e FIAT.
+                </p>
+            </div>
+            <div class="w3-row w3-container">
+                <div class="w3-half w3-container w3-hide-small">
+                    <img src="/assets/img/hero-image-home.jpg" class="w3-round w3-image" width="600px" alt="Photo of Me">
+                </div>
+                <div class="w3-half w3-container">
+                    <p class="w3-text-gray" style="text-align:left; font-size: 20px;">
+                        <em><b>Sai di aver diritto ad uno sconto sul bollo dell'auto se la iscrivi al registro storico? Non perdere l'occasione e contattaci subito!</b></em>
+                    </p>
+                    <a href="#contatti" class="w3-center w3-btn-main"><span>CONTATTACI</span></a>
+                </div>
+            </div>    
+        </div>
+
+        <!-- Contact Section -->
+        <div class="w3-light-gray w3-padding-top-32">
+            <div class="w3-content w3-container" style="min-width:70%;" id="contatti">
+                <h3 class="w3-wide w3-xxlarge w3-center"><b>SCRIVICI O VIENI A TROVARCI</span></b></h3>
+                <div class="w3-row w3-container w3-padding-top-32">
+                    <div class="w3-half w3-container">
+                        <div class="w3-map-responsive">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.6772495104974!2d11.8557108157972!3d45.476305140656336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477ed729d36d82f3%3A0x35ab15a4051b10d4!2sKilometri%20%26%20Miglia%20-%20Agenzia%20Pratiche%20Auto!5e0!3m2!1sen!2sit!4v1679197920162!5m2!1sen!2sit" style="position: absolute; border:0; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="w3-half w3-xlarge">
+                        <a class="w3-row" style="font-size: 80%;" href="https://goo.gl/maps/zbTsHMPdwMhprvQz8" target="_blank" rel="noopener noreferrer"><i class="fa fa-map-marker fa-fw w3-margin-right"></i>Guglielmo Marconi 35, Saletto di Vigodarzere, Padova, Italia</a>
+                        <a class="w3-row" style="font-size: 80%;" href="tel:+390498841873"><i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Telefono: +39 049 884 1873</a>
+                        <a class="w3-row" style="font-size: 80%;" href="mailto:info@kilometriemiglia.it"><i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: info@kilometriemiglia.it</a>
+                        <form method="post" name="contact_form" action="" target="_blank" rel="noopener noreferrer">
+                            <div class="w3-row" style="margin-bottom:8px">
+                                <div class="w3-half">
+                                    <input class="w3-input w3-border" type="text" placeholder="Nome" required name="name">
+                                </div>
+                                <div class="w3-half">
+                                    <input class="w3-input w3-border" type="text" placeholder="Cognome" required name="surname">
+                                </div>
+                            </div>
+                            <div class="w3-row" style="margin-bottom: 8px;">
+                                <input class="w3-input w3-border" type="text" placeholder="Email" required name="email">
+                            </div>
+                            <div class="w3-row">
+                                <textarea class="w3-input w3-border" style="resize: vertical;" placeholder="Messaggio" required name="message"></textarea>
+                            </div>
+                            <button class="w3-btn-main w3-black w3-right w3-section w3-medium" type="submit" value="Submit">
+                                <i class="fa fa-paper-plane"></i> INVIA MESSAGGIO
+                            </button>
+                        </form>
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="w3-container w3-black w3-padding-16">
+            <div class="w3-row w3-center">
+                <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Torna all'inizio</a>
+            </div>
+            <div class="w3-row">
+                <div class="w3-right w3-padding">
+                    <p>Kilometri&Miglia© - Tutti i diritti riservati</p>
+                    <p><a href="https://goo.gl/maps/zbTsHMPdwMhprvQz8" target="_blank" rel="noopener noreferrer">Via Guglielmo Marconi, 35, 35010, Saletto di Vigodarzere, PD</a></p>
+                    <p>P.IVA 1234567890</p>
+                    <p><a href="/pages/cookie-policy.html" target="_blank" rel="noopener noreferrer">Cookie Policy</a></p>
+                </div>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="application/ld+json">{"@context": "https://schema.org","@type": "Organization","name": "Kilometri&Miglia","hasMap":"https://goo.gl/maps/kq7gGMPVkZZCBsEs7"}</script>
+    </body>
 </html>
