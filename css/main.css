@@ -333,7 +333,7 @@ html {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
-  .hero-img-1, .hero-img-2, .hero-img-3, .hero-img-4 {
+  .hero-img-1 {
     background-attachment: scroll;
     min-height: 400px;
   }
