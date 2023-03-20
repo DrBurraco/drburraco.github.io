@@ -237,7 +237,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 /*My CSS*/
 /*FONT FAMILY*/
 .w3-text-magneto{
-    font-family: Magneto, sans-serif;
+    font-family: "Magneto", "Roboto",  sans-serif;
     font-style: normal;
     font-weight: 700;
 }
