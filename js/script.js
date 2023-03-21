@@ -20,9 +20,9 @@ function dropDownService(){
 
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function closeModals(event) {
+window.onclick = function closeModal(event) {
     // Get the modal
-    var modal = document.getElementById('modal');
+    var modal01 = document.getElementById('modal01');
     var modal02 = document.getElementById('modal02');
     var modal03 = document.getElementById('modal03');
     var modal04 = document.getElementById('modal04');
@@ -31,9 +31,10 @@ window.onclick = function closeModals(event) {
     var modal07 = document.getElementById('modal07');
     var modal08 = document.getElementById('modal08');
     var modal09 = document.getElementById('modal09');
+
     switch(event.target){
-        case modal:
-            modal.style.display ="none";
+        case modal01:
+            modal01.style.display ="none";
             break;
         case modal02:
             modal02.style.display ="none";

@@ -254,7 +254,7 @@ body, html {
 }
 
 html,body,h1,h2,h3,h4,h5,h6{
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 html {
@@ -276,6 +276,17 @@ html {
   transform: scale(1);
 }
 
+.w3-text-header-style{
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
+
+.w3-text-header-border{
+  border-color: black; 
+  border-style: solid; 
+  border-left: 0px; 
+  border-right: 0px;
+}
 
 /*SERVICES*/
 .w3-container-overlay {
@@ -337,38 +348,15 @@ html {
   color: white;
 }
 
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .hero-img-1 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
-
 /*BUTTONS*/
-.w3-btn-main {
-  border-radius: 4px;
-  background-color: #000;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
-  padding: 10px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-  
-.w3-btn-main span {
+.w3-button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
   
-.w3-btn-main span:after {
+.w3-button span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -377,11 +365,11 @@ html {
   transition: 0.5s;
 }
   
-.w3-btn-main:hover span {
+.w3-button:hover span {
   padding-right: 25px;
 }
   
-.w3-btn-main:hover span:after {
+.w3-button:hover span:after {
   opacity: 1;
   right: 0;
 }
