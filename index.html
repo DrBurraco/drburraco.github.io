@@ -7,7 +7,7 @@
         <title>Kilometri&Miglia</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
@@ -42,19 +42,21 @@
 
         <!-- First Parallax Image with Logo Text -->
         <header class="w3-display-container" id="home">
-            <img class="w3-image w3-opacity-max" src="/assets/img/hero-image-home.jpg">
+            <img class="w3-image w3-opacity" src="/assets/img/hero-image-home.jpg" alt="Porsche Carrera Gialla">
             <div class="w3-display-middle w3-center">
                 <div class="w3-row">
-                    <h1 class="w3-jumbo w3-padding" style="white-space:nowrap;">
-                        <span class="w3-padding w3-wide w3-hide-small w3-text-magneto w3-opacity-off" style="border-color: black; border-style: solid; border-left: 0px; border-right: 0px;">Kilometri&Miglia</span>
-                        <span class="w3-padding w3-wide w3-text-magneto w3-opacity-off w3-hide-medium w3-text-magneto w3-hide-large w3-xlarge" style="border-color: black; border-style: solid; border-left: 0px; border-right: 0px;">Kilometri&Miglia</span>
+                    <h1 class="" style="white-space:nowrap;">
+                        <span class="w3-padding w3-wide w3-text-magneto w3-opacity-off w3-hide-small w3-hide-medium w3-jumbo w3-text-header-border w3-text-header-style">Kilometri&Miglia</span>
+                        <span class="w3-padding w3-wide w3-text-magneto w3-opacity-off w3-hide-small w3-hide-large w3-xxlarge w3-text-header-border w3-text-header-style">Kilometri&Miglia</span>
+                        <span class="w3-padding w3-wide w3-text-magneto w3-opacity-off w3-hide-medium w3-hide-large w3-large w3-text-header-border">Kilometri&Miglia</span>
                     </h1>
                 </div>
                 <!-- <h2 class="w3-padding">
                     <span class="w2-padding w3-black w3-hide-small"> Pratiche auto, motocicli, ciclomotori,veicoli storici, noleggio con conducente e molto altro.</span>
                 </h2> -->
-                <div class="w3-row" style="margin-top:30px;">
-                    <a href="#servizi" class="w3-btn-main"><span>ESPLORA</span></a>
+                <div class="w3-row" style="padding-bottom: 10%;">
+                    <a href="#servizi" class="w3-button w3-black w3-padding-24 w3-hover-black w3-xlarge w3-round-large w3-hide-small"><span>ESPLORA</span></a>
+                    <a href="#servizi" class="w3-button w3-black w3-padding w3-hover-black w3-xlarge w3-round-large w3-hide-medium w3-hide-large"><span>ESPLORA</span></a>
                 </div>
             </div>
         </header>
@@ -63,31 +65,33 @@
         <div class="w3-light-gray">
             <div class="w3-content w3-center w3-padding-top-64" style="min-width:70%" id="servizi">
                 <div class="w3-container">
-                    <h3 class="w3-wide w3-xxlarge"><b><span class="w3-hide-small">I NOSTRI </span>SERVIZI</b></h3>
-                    <h3 class="w3-wide w3-left w3-container">PRATICHE <b>STANDARD</b></h3>
+                    <h3 class="w3-xxlarge"><b><span class="w3-hide-small">I NOSTRI </span>SERVIZI</b></h3>
+                    <h3 class="w3-left w3-container">PRATICHE <b>STANDARD</b></h3>
                     <div class="w3-row-padding">
-                        <div class="w3-third w3-padding" onclick="document.getElementById('modal').style.display='block'">
+                        <div class="w3-third w3-padding" onclick="document.getElementById('modal01').style.display='block'">
                             <div class="w3-display-container">
                                 <div class="w3-container-overlay">
                                     <img src="/assets/img/servizi/pratiche-veicoli.jpg" class="w3-image" alt="Pratica Veicolo">
                                     <div class="w3-service-overlay">
-                                        <div class="w3-service-overlay-text w3-xxxlarge" >+</div>
+                                        <div class="w3-service-overlay-text w3-xxxlarge">+</div>
                                     </div>
-                                    <div id="modal" class="w3-modal">
-                                        <div class="w3-container w3-animate-zoom">
-                                          <header class="w3-container w3-light-gray">
-                                            <span onclick="document.getElementById('modal').style.display='none'" class="w3-button w3-right">&times;</span>
+                                </div>
+                                <div class="w3-container">
+                                <div id="modal01" class="w3-modal">
+                                    <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                                        <header class="w3-container w3-light-gray">
+                                            <span onclick="document.alert(Ciao)" class="w3-button w3-hover-black w3-display-topright">&times;</span>
                                             <h2>Modal Header</h2>
-                                          </header>
-                                          <div class="w3-container w3-white">
+                                        </header>
+                                        <div class="w3-container">
                                             <p>Some text..</p>
                                             <p>Some text..</p>
-                                          </div>
-                                          <footer class="w3-container w3-light-gray">
-                                            <p>Modal Footer</p>
-                                          </footer>
                                         </div>
+                                        <footer class="w3-container w3-light-gray">
+                                            <p>Modal Footer</p>
+                                        </footer>
                                     </div>
+                                </div>
                                 </div>
                             </div>
                             <div class="w3-white w3-xlarge w3-padding">
@@ -97,17 +101,17 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="w3-third w3-padding">
+                        <div class="w3-third w3-padding"  onclick="document.getElementById('modal02').style.display='block'">
                             <div class="w3-display-container">
                                 <div class="w3-container-overlay">
                                     <img src="/assets/img/servizi/patente-di-guida.jpg" class="w3-image" alt="Patente di Guida">
-                                    <div class="w3-service-overlay" onclick="document.getElementById('modal').style.display='block'">
+                                    <div class="w3-service-overlay">
                                         <div class="w3-service-overlay-text w3-xxxlarge" >+</div>
                                     </div>
-                                    <div id="modal" class="w3-modal">
+                                    <div id="modal02" class="w3-modal">
                                         <div class="w3-container w3-animate-zoom">
                                           <header class="w3-container w3-light-gray">
-                                            <span onclick="document.getElementById('modal').style.display='none'" class="w3-button w3-right">&times;</span>
+                                            <span onclick="document.getElementById('modal02').style.display='none'" class="w3-button w3-right">&times;</span>
                                             <h2>Modal Header</h2>
                                           </header>
                                           <div class="w3-container w3-white">
@@ -128,11 +132,11 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="w3-third w3-padding">
+                        <div class="w3-third w3-padding" onclick="document.getElementById('modal03').style.display='block'">
                             <div class="w3-display-container">
                                 <div class="w3-container-overlay">
                                     <img src="/assets/img/servizi/pratiche-ciclomotori.jpg" class="w3-image" alt="Innocenti Lui Colore Celeste">
-                                    <div class="w3-service-overlay" onclick="document.getElementById('modal03').style.display='block'">
+                                    <div class="w3-service-overlay">
                                         <div class="w3-service-overlay-text w3-xxxlarge" >+</div>
                                     </div>
                                     <div id="modal03" class="w3-modal">
@@ -161,17 +165,17 @@
                         </div>
                     </div>
                     <div class="w3-row-padding">
-                        <div class="w3-third w3-padding" onclick="document.getElementById('modal09').style.display='block'">
+                        <div class="w3-third w3-padding" onclick="document.getElementById('modal04').style.display='block'">
                             <div class="w3-display-container">
                                 <div class="w3-container-overlay">
                                     <img src="/assets/img/servizi/trasporto-merci.jpg" class="w3-image" alt="Furgone Carica Merci">
                                     <div class="w3-service-overlay" >
                                         <div class="w3-service-overlay-text w3-xxxlarge" >+</div>
                                     </div>
-                                    <div id="modal09" class="w3-modal">
+                                    <div id="modal04" class="w3-modal">
                                         <div class="w3-container w3-animate-zoom">
                                         <header class="w3-container w3-light-gray">
-                                            <span onclick="document.getElementById('modal09').style.display='none'" class="w3-button w3-right">&times;</span>
+                                            <span onclick="document.getElementById('modal04').style.display='none'" class="w3-button w3-right">&times;</span>
                                             <h2>Modal Header</h2>
                                         </header>
                                         <div class="w3-container w3-white">
@@ -193,42 +197,13 @@
                             </div>
                         </div>
                     </div>
-                    <h3 class="w3-wide w3-left w3-container">PRATICHE <b>VEICOLI STORICI</b></h3>
+                    <h3 class="w3-left w3-container">PRATICHE <b>VEICOLI STORICI</b></h3>
                     <div class="w3-row-padding">
-                        <div class="w3-third w3-padding">
+                        <div class="w3-third w3-padding" onclick="document.getElementById('modal05').style.display='block'">
                             <div class="w3-display-container">
                                 <div class="w3-container-overlay">
-                                    <img src="/assets/img/servizi/iscrizione-veicolo-storico.jpg" class="w3-image" alt="Random Name">
-                                    <div class="w3-service-overlay" onclick="document.getElementById('modal04').style.display='block'">
-                                        <div class="w3-service-overlay-text w3-xxxlarge" >+</div>
-                                    </div>
-                                    <div id="modal04" class="w3-modal">
-                                        <div class="w3-container w3-animate-zoom">
-                                          <header class="w3-container w3-light-gray">
-                                            <span onclick="document.getElementById('modal04').style.display='none'" class="w3-button w3-right">&times;</span>
-                                            <h2>Modal Header</h2>
-                                          </header>
-                                          <div class="w3-container w3-white">
-                                            <p>Some text..</p>
-                                            <p>Some text..</p>
-                                          </div>
-                                          <footer class="w3-container w3-light-gray">
-                                            <p>Modal Footer</p>
-                                          </footer>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="w3-white w3-xlarge w3-padding-16">
-                                    <h4 class="w3-padding"><b>Iscrizioni ai registri storici ASI, FMI e FIAT</b></h4>
-                                    <span class="w3-medium w3-padding">Per la qualifica di "veicolo di interesse storico e collezionisticio" e tutte le agevolazioni previste (bollo e assicurazione)</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="w3-third w3-padding">
-                            <div class="w3-display-container">
-                                <div class="w3-container-overlay">
-                                    <img src="/assets/img/servizi/reimmatricolazione.jpg" class="w3-image" alt="Random Name">
-                                    <div class="w3-service-overlay" onclick="document.getElementById('modal05').style.display='block'">
+                                    <img src="/assets/img/servizi/iscrizione-veicolo-storico.jpg" class="w3-image" alt="Ferrari Storica">
+                                    <div class="w3-service-overlay">
                                         <div class="w3-service-overlay-text w3-xxxlarge" >+</div>
                                     </div>
                                     <div id="modal05" class="w3-modal">
@@ -247,17 +222,19 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w3-white w3-xlarge w3-padding-16">
-                                    <h4><b>Reimmatricolazioni</b></h4>
-                                    <span class="w3-medium w3-padding">Per la riammissione in circolazione dei veicoli cessati dalla circolazione o di origine sconosciuta</span>
-                                </div>
+                            </div>
+                            <div class="w3-white w3-xlarge w3-padding-16">
+                                <p class="w3-tooltip">
+                                    <b>Iscrizioni ai registri storici ASI, FMI e FIAT <i class="fa fa-chevron-up" id="w3-hover-icon"></i></b>
+                                    <span class="w3-medium w3-text w3-animate-zoom">Per la qualifica di "veicolo di interesse storico e collezionisticio" e tutte le agevolazioni previste (bollo e assicurazione)</span>
+                                </p>
                             </div>
                         </div>
-                        <div class="w3-third w3-padding">
+                        <div class="w3-third w3-padding" onclick="document.getElementById('modal06').style.display='block'">
                             <div class="w3-display-container">
                                 <div class="w3-container-overlay">
-                                    <img src="/assets/img/servizi/collaudo-e-revisione.jpg" class="w3-image" alt="Controllo Olio Motore">
-                                    <div class="w3-service-overlay" onclick="document.getElementById('modal06').style.display='block'">
+                                    <img src="/assets/img/servizi/reimmatricolazione.jpg" class="w3-image" alt="Fiat 500 Gialla">
+                                    <div class="w3-service-overlay">
                                         <div class="w3-service-overlay-text w3-xxxlarge" >+</div>
                                     </div>
                                     <div id="modal06" class="w3-modal">
@@ -276,20 +253,19 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w3-white w3-xlarge w3-padding-16">
-                                    <h4><b>Collaudi e Revisioni</b></h4>
-                                    <span class="w3-medium w3-padding">Inserimento Telai in archivio, Prenotazione sedute presso Motorizzazione e sedute esterne</span>
-                                </div>
+                            </div>
+                            <div class="w3-white w3-xlarge w3-padding-16">
+                                <p class="w3-tooltip">
+                                    <b>Reimmatricolazioni <i class="fa fa-chevron-up" id="w3-hover-icon"></i></b>
+                                    <span class="w3-medium w3-text w3-animate-zoom">Per la riammissione in circolazione dei veicoli cessati dalla circolazione o di origine sconosciuta</span>
+                                </p>
                             </div>
                         </div>
-                    </div>
-                    <h3 class="w3-wide w3-left w3-container">ALTRI SERVIZI</h3>
-                    <div class="w3-row-padding" style="padding-bottom: 64px;">
-                        <div class="w3-third w3-padding">
+                        <div class="w3-third w3-padding" onclick="document.getElementById('modal07').style.display='block'">
                             <div class="w3-display-container">
                                 <div class="w3-container-overlay">
-                                    <img src="/assets/img/servizi/noleggio-con-conducente.jpg" class="w3-image" alt="Macchina con conducente">
-                                    <div class="w3-service-overlay" onclick="document.getElementById('modal07').style.display='block'">
+                                    <img src="/assets/img/servizi/collaudo-e-revisione.jpg" class="w3-image" alt="Meccanico Controlla Olio Motore">
+                                    <div class="w3-service-overlay">
                                         <div class="w3-service-overlay-text w3-xxxlarge" >+</div>
                                     </div>
                                     <div id="modal07" class="w3-modal">
@@ -308,17 +284,22 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w3-white w3-xlarge w3-padding-16">
-                                    <h4><b>Noleggio Con Conducente</b></h4>
-                                    <span class="w3-medium">Hai bisogno di un passaggio? Chiamaci e penseremo a tutto noi</span>
-                                </div>
+                            </div>
+                            <div class="w3-white w3-xlarge w3-padding-16">
+                                <p class="w3-tooltip">
+                                    <b>Collaudi e Revisioni <i class="fa fa-chevron-up" id="w3-hover-icon"></i></b>
+                                    <span class="w3-medium w3-text w3-animate-zoom">Inserimento Telai in archivio, Prenotazione sedute presso Motorizzazione e sedute esterne</span>
+                                </p>
                             </div>
                         </div>
-                        <div class="w3-third w3-padding">
+                    </div>
+                    <h3 class="w3-left w3-container">ALTRI SERVIZI</h3>
+                    <div class="w3-row-padding" style="padding-bottom: 64px;">
+                        <div class="w3-third w3-padding" onclick="document.getElementById('modal08').style.display='block'">
                             <div class="w3-display-container">
                                 <div class="w3-container-overlay">
-                                    <img src="/assets/img/servizi/consulente.jpg" class="w3-image" alt="Consulente">
-                                    <div class="w3-service-overlay" onclick="document.getElementById('modal08').style.display='block'">
+                                    <img src="/assets/img/servizi/noleggio-con-conducente.jpg" class="w3-image" alt="Macchina con Conducente">
+                                    <div class="w3-service-overlay">
                                         <div class="w3-service-overlay-text w3-xxxlarge" >+</div>
                                     </div>
                                     <div id="modal08" class="w3-modal">
@@ -337,10 +318,43 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w3-white w3-xlarge w3-padding-16">
-                                    <h4><b>Hai subito un incidente stradale, un infortunio sul lavoro o credi di essere vittima di un caso di malsanità?</b></h4>
-                                    <span class="w3-medium">Chiamaci ed entro 24 ore ti faremo parlare con i nostri epsperti del settore che ti aiuteranno ad ottenere il miglior riasarcimento nel minor tempo possibile</span>
+                            </div>
+                            <div class="w3-white w3-xlarge w3-padding-16">
+                                <p class="w3-tooltip">
+                                    <b>Noleggio Con Conducente <i class="fa fa-chevron-up" id="w3-hover-icon"></i></b>
+                                    <span class="w3-medium w3-text w3-animate-zoom">Hai bisogno di un passaggio? Chiamaci e penseremo a tutto noi</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w3-third w3-padding">
+                            <div class="w3-display-container" onclick="document.getElementById('modal09').style.display='block'">
+                                <div class="w3-container-overlay">
+                                    <img src="/assets/img/servizi/consulente.jpg" class="w3-image" alt="Consulente">
+                                    <div class="w3-service-overlay">
+                                        <div class="w3-service-overlay-text w3-xxxlarge" >+</div>
+                                    </div>
+                                    <div id="modal09" class="w3-modal">
+                                        <div class="w3-modal-content w3-animate-zoom">
+                                          <header class="w3-container w3-light-gray">
+                                            <span onclick="document.getElementById('modal09').style.display='none'" class="w3-button w3-right">&times;</span>
+                                            <h2>Modal Header</h2>
+                                          </header>
+                                          <div class="w3-container w3-white">
+                                            <p>Some text..</p>
+                                            <p>Some text..</p>
+                                          </div>
+                                          <footer class="w3-container w3-light-gray">
+                                            <p>Modal Footer</p>
+                                          </footer>
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="w3-white w3-large w3-padding-16">
+                                <p class="w3-tooltip">
+                                    <b>Hai subito un incidente stradale, un infortunio sul lavoro o credi di essere vittima di un caso di malsanità? <i class="fa fa-chevron-up" id="w3-hover-icon"></i></b>
+                                    <span class="w3-medium w3-text w3-animate-zoom">Chiamaci ed entro 24 ore ti faremo parlare con i nostri epsperti del settore che ti aiuteranno ad ottenere il miglior riasarcimento nel minor tempo possibile</span>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -350,10 +364,10 @@
 
         <!-- Hours Section -->
         <div class="w3-content w3-padding-top-32 w3-center" style="min-width:70%; margin-bottom: 32px;" id="orari">
-            <div class="w3-row">
-                <h3 class="w3-wide w3-xxlarge"><b>ORARI<span class="w3-hide-small"> DI APERTURA</span></b></h3>
-                <div class="w3-half w3-container">
-                    <div class="w3-large">
+            <h3 class="w3-xxlarge"><b>ORARI<span class="w3-hide-small"> DI APERTURA</span></b></h3>
+            <div class="w3-cell-row">
+                <div class="w3-cell w3-container">
+                    <div class="w3-large w3-justify">
                         <b>
                             <p>LUNEDÌ: 15:30 - 20:00</p>
                             <p>MARTEDÌ - VENERDÌ: 09:00 - 12:30, 15:30 - 20:00</p>
@@ -362,8 +376,8 @@
                         </b>
                     </div>
                 </div>
-                <div class="w3-half w3-container w3-padding-top-64">
-                    <a href="#contatti" class="w3-center w3-btn-main"><span>CONTATTACI</span></a>
+                <div class="w3-cell w3-cell-middle w3-container w3-padding-top-64">
+                    <a href="#contatti" class="w3-button w3-black w3-padding-24 w3-hover-black w3-xlarge w3-round-large" style="vertical-align:middle"><span>CONTATTACI</span></a>
                 </div>
             </div>      
         </div>
@@ -386,8 +400,8 @@
         <!-- About Section -->
         <div class="w3-content w3-center" style="min-width:70%; padding-bottom: 32px;" id="chi-siamo">
             <div class="w3-container">
-                <h3 class="w3-wide w3-xxlarge"><b>CHI SIAMO</span></b></h3>
-                <p class="w3-text-gray w3-hide-small w3-margin" style="text-align:left; font-size: 18px;">
+                <h3 class="w3-xxlarge"><b>PERCHÉ SCEGLIERCI</b></h3>
+                <p class="w3-text-gray w3-hide-small w3-margin" style="text-align:justify; font-size: 18px;">
                     Siamo un'agenzia di pratiche auto, localizzata a Saletto di Vigodarzere in Provincia di Padova, che si occupa di tutti i tipi di pratiche veicoli:
                     immatricolazioni e reimmatricolazioni, passaggi di proprietà, duplicati, collaudi, revisioni, radiazioni e molte altre. <br/>
                     Gestiamo anche le pratiche patenti, fornendo rinnovi, duplicati, riclassificazioni e conversioni.<br/>
@@ -401,21 +415,21 @@
                     Grazie alla nostra vasta esperienza nel settore, siamo in grado di offrire un servizio di altissima qualità, garantendo la massima efficienza e puntualità.<br/>
                     Scegli noi per tutte le tue pratiche auto e moto e non te ne pentirai!
                 </p>
-                <p class="w3-text-gray w3-hide-medium w3-hide-large" style="text-align: left; font-size: 18px;">
+                <p class="w3-text-gray w3-hide-medium w3-hide-large" style="text-align: justify; font-size: 18px;">
                     Siamo un'agenzia di pratiche auto, localizzata a Saletto di Vigodarzere in Provincia di Padova, che si occupa delle pratiche di: veicoli, ciclomotori e 
                     motocicli (immatricolazioni, reimmatricolazioni, passaggi di proprietà, duplicati, collaudi, revisioni, radiazioni), patenti (rinnovi, duplicati, 
                     riclassificazioni, conversioni) e iscrizioni a registri storici ASI, FMI e FIAT.
                 </p>
             </div>
-            <div class="w3-row w3-container">
-                <div class="w3-half w3-container w3-hide-small">
-                    <img src="/assets/img/hero-image-home.jpg" class="w3-round w3-image" width="600px" alt="Photo of Me">
+            <div class="w3-container">
+                <div class="w3-cell w3-cell-middle w3-container w3-hide-small">
+                    <img src="/assets/img/contatti/punto-di-domanda.jpg" class="w3-round w3-image" alt="Punto di Domanda">
                 </div>
-                <div class="w3-half w3-container">
-                    <p class="w3-text-gray" style="text-align:left; font-size: 20px;">
-                        <em><b>Sai di aver diritto ad uno sconto sul bollo dell'auto se la iscrivi al registro storico? Non perdere l'occasione e contattaci subito!</b></em>
+                <div class="w3-cell w3-cell-middle w3-container">
+                    <p class="w3-border w3-border-black w3-round-large" style="font-size: 20px;">
+                        <em><b>Sai di avere diritto ad uno sconto sul bollo dell'auto se la iscrivi al registro storico? Non perdere l'occasione e contattaci subito!</b></em>
                     </p>
-                    <a href="#contatti" class="w3-center w3-btn-main"><span>CONTATTACI</span></a>
+                    <a href="#contatti" class="w3-button w3-black w3-padding-24 w3-hover-black w3-xlarge w3-round-large"><span>CONTATTACI</span></a>
                 </div>
             </div>    
         </div>
@@ -423,7 +437,7 @@
         <!-- Contact Section -->
         <div class="w3-light-gray w3-padding-top-32">
             <div class="w3-content w3-container" style="min-width:70%;" id="contatti">
-                <h3 class="w3-wide w3-xxlarge w3-center"><b>SCRIVICI O VIENI A TROVARCI</span></b></h3>
+                <h3 class="w3-xxlarge w3-center"><b>SCRIVICI O VIENI A TROVARCI</span></b></h3>
                 <div class="w3-row w3-container w3-padding-top-32">
                     <div class="w3-half w3-container">
                         <div class="w3-map-responsive">
@@ -449,7 +463,7 @@
                             <div class="w3-row">
                                 <textarea class="w3-input w3-border" style="resize: vertical;" placeholder="Messaggio" required name="message"></textarea>
                             </div>
-                            <button class="w3-btn-main w3-black w3-right w3-section w3-medium" type="submit" value="Submit">
+                            <button class="w3-button w3-round-large w3-black w3-right w3-section w3-medium" type="submit" value="Submit">
                                 <i class="fa fa-paper-plane"></i> INVIA MESSAGGIO
                             </button>
                         </form>
@@ -461,7 +475,7 @@
         <!-- Footer Section -->
         <footer class="w3-container w3-black w3-padding-16">
             <div class="w3-row w3-center">
-                <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Torna all'inizio</a>
+                <a href="#home" class="w3-button w3-light-grey w3-round-large"><i class="fa fa-arrow-up w3-margin-right"></i>Torna all'inizio</a>
             </div>
             <div class="w3-row">
                 <div class="w3-right w3-padding">
