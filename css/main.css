@@ -254,7 +254,7 @@ body, html {
 }
 
 html,body,h1,h2,h3,h4,h5,h6{
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 html {
@@ -274,6 +274,18 @@ html {
 
 .w3-hover-bottombar:hover::after{    
   transform: scale(1);
+}
+
+.w3-text-header-style{
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
+
+.w3-text-header-border{
+  border-color: black; 
+  border-style: solid; 
+  border-left: 0px; 
+  border-right: 0px;
 }
 
 /*SERVICES*/
@@ -309,12 +321,18 @@ html {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+.w3-tooltip #w3-hover-icon{
+  transition: transform 1s ease 0s;
+}
 
+.w3-tooltip:hover #w3-hover-icon{
+  transform: rotate(180deg);
+}
 /*HERO IMAGE*/
 /* Create a Parallax Effect */
 .hero-img-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/hero-image-home.jpg");
-  height: 100%;
+  background-image: url("/assets/img/hero-image-home.jpg");
+  min-height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -330,38 +348,15 @@ html {
   color: white;
 }
 
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .hero-img-1 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
-
 /*BUTTONS*/
-.w3-btn-main {
-  border-radius: 4px;
-  background-color: #000;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
-  padding: 10px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-  
-.w3-btn-main span {
+.w3-button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
   
-.w3-btn-main span:after {
+.w3-button span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -370,11 +365,11 @@ html {
   transition: 0.5s;
 }
   
-.w3-btn-main:hover span {
+.w3-button:hover span {
   padding-right: 25px;
 }
   
-.w3-btn-main:hover span:after {
+.w3-button:hover span:after {
   opacity: 1;
   right: 0;
 }
