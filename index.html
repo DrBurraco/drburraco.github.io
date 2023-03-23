@@ -65,22 +65,23 @@
         <div class="w3-light-gray">
             <div class="w3-content w3-center w3-padding-top-64" style="min-width:70%" id="servizi">
                 <div class="w3-container">
-                    <h3 class="w3-xxlarge"><b><span class="w3-hide-small">I NOSTRI </span>SERVIZI</b></h3>
+                    <h3 class="w3-xxlarge"><b><span class="w3-hide-small">I NOSTRI </span>SERVIZI <i class="fa fa-file-text"></i></b></h3>
                     <h3 class="w3-left w3-container">PRATICHE <b>STANDARD</b></h3>
                     <div class="w3-row-padding">
-                        <div class="w3-third w3-padding" onclick="document.getElementById('modal01').style.display='block'">
-                            <div class="w3-display-container">
+                        <div class="w3-third w3-padding">
+                            <div class="w3-display-container" onclick="document.getElementById('modal01').style.display='block'">
                                 <div class="w3-container-overlay">
                                     <img src="/assets/img/servizi/pratiche-veicoli.jpg" class="w3-image" alt="Pratica Veicolo">
                                     <div class="w3-service-overlay">
                                         <div class="w3-service-overlay-text w3-xxxlarge">+</div>
                                     </div>
                                 </div>
-                                <div class="w3-container">
+                            </div>
+                            <div class="w3-container">
                                 <div id="modal01" class="w3-modal">
                                     <div class="w3-modal-content w3-card-4 w3-animate-zoom">
                                         <header class="w3-container w3-light-gray">
-                                            <span onclick="document.alert(Ciao)" class="w3-button w3-hover-black w3-display-topright">&times;</span>
+                                            <span onclick="document.getElementById('modal01').style.display='none'" class="w3-button w3-hover-black w3-display-topright w3-xlarge">&times;</span>
                                             <h2>Modal Header</h2>
                                         </header>
                                         <div class="w3-container">
@@ -92,10 +93,9 @@
                                         </footer>
                                     </div>
                                 </div>
-                                </div>
                             </div>
                             <div class="w3-white w3-xlarge w3-padding">
-                                <p class="w3-tooltip">
+                                <p class="w3-tooltip" onclick="document.getElementById('modal01').style.display='block'">
                                     <b>Pratiche Veicoli <i class="fa fa-chevron-up" id="w3-hover-icon"></i></b>
                                     <span class="w3-medium w3-text w3-animate-zoom">Immatricolazioni e Reimmatricolazioni, Passaggi di proprietà, Duplicati, Collaudi e Revisioni, Radiazioni</span>
                                 </p>
