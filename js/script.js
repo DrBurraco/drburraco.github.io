@@ -32,36 +32,40 @@ window.onclick = function closeModal(event) {
     var modal08 = document.getElementById('modal08');
     var modal09 = document.getElementById('modal09');
 
-    switch(event.target){
-        case modal01:
-            modal01.style.display ="none";
-            break;
-        case modal02:
-            modal02.style.display ="none";
-            break;
-        case modal03:
-            modal03.style.display ="none";
-            break;
-        case modal04:
-            modal04.style.display ="none";
-            break;
-        case modal05:
-            modal05.style.display ="none";
-            break;
-        case modal06:
-            modal06.style.display ="none";
-            break;
-        case modal07:
-            modal07.style.display ="none";
-            break;
-        case modal08:
-            modal08.style.display ="none";
-            break;
-        case modal09:
-            modal09.style.display ="none";
-            break;
-        default:
-            break;        
+    if (event.target == modal01) {
+        modal01.style.display = "none";
+    }
+
+    if (event.target == modal02) {
+        modal02.style.display = "none";
+    }
+
+    if (event.target == modal03) {
+        modal03.style.display = "none";
+    }
+
+    if (event.target == modal04) {
+        modal04.style.display = "none";
+    }
+
+    if (event.target == modal05) {
+        modal05.style.display = "none";
+    }
+
+    if (event.target == modal06) {
+        modal06.style.display = "none";
+    }
+
+    if (event.target == modal07) {
+        modal07.style.display = "none";
+    }
+
+    if (event.target == modal08) {
+        modal08.style.display = "none";
+    }
+
+    if (event.target == modal09) {
+        modal09.style.display = "none";
     }
 }
 
