@@ -8,16 +8,47 @@ function toggleFunction() {
     }
 }
 
+
 /** SERVICE SECTION*/ 
-function dropDownService(){
-    var dropDownService01 = document.getElementById("dropDownService01");
-    if (dropDownService01.className.indexOf("w3-show") == -1) { 
-        dropDownService01.className += " w3-show";
+/* function showInfo() {
+    var x = document.getElementById("service-info-mobile");
+    var y = document.getElementById("w3-icon");
+    if (x.className.indexOf("w3-show") == -1 ) {
+        x.className += " w3-show";
+        y.className += " w3-icon-down";
     } else {
-        dropDownService01.style.display = "none";
+        x.className = x.className.replace(" w3-show", "");
+        y.className = y.className.replace(" w3-icon-down", " w3-icon-up");
     }
+} */
+
+function showInfo(container) {
+    var x = container.children;
+    var description = x[1];
+    var title_icon = x[0].lastElementChild.lastElementChild;
+    if (description.className.indexOf("w3-show") == -1){
+        description.className += " w3-show";
+        title_icon.className += " w3-icon-down";
+    } else {
+        description.className = description.className.replace(" w3-show", "");
+        title_icon.className = title_icon.className.replace(" w3-icon-down", " w3-icon-up");
+    }
+    
 }
 
+function showInfo2(container) {
+    var x = container.children;
+    var description = x[3];
+    var title_icon = x[2];
+    if (description.className.indexOf("w3-show") == -1){
+        description.className += " w3-show";
+        title_icon.className += " w3-icon-down";
+    } else {
+        description.className = description.className.replace(" w3-show", "");
+        title_icon.className = title_icon.className.replace(" w3-icon-down", " w3-icon-up");
+    }
+    
+}
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function closeModal(event) {

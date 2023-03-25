@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <!-- Navbar (sit on top) -->
@@ -75,11 +75,19 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w3-white w3-xlarge w3-padding" onclick="document.getElementById('modal01').style.display='block'">
+                            <div class="w3-white w3-xlarge w3-padding w3-hide-small w3-hide-medium" onclick="document.getElementById('modal01').style.display='block'">
                                 <p class="w3-tooltip" >
-                                    <b>Pratiche Veicoli <i class="fa fa-chevron-up" id="w3-hover-icon"></i></b>
-                                    <span class="w3-medium w3-text w3-animate-zoom">Immatricolazioni e Reimmatricolazioni, Passaggi di proprietà, Duplicati, Collaudi e Revisioni, Radiazioni</span>
+                                    <b>Pratiche Veicoli <i class="fa fa-chevron-up w3-hover-icon"></i></b><br>
+                                    <span class="w3-large w3-text w3-animate-zoom">Immatricolazioni e Reimmatricolazioni, Passaggi di proprietà, Duplicati, Collaudi e Revisioni, Radiazioni</span><br>
+                                    <a onclick="document.getElementById('modal01').style.display='block'" class="w3-animate-zoom w3-text w3-button w3-black w3-padding w3-hover-black w3-xlarge w3-round-large" style="vertical-align:middle"><span>Dettagli</span></a>
                                 </p>
+                            </div>
+                            <div class="w3-white w3-xlarge w3-padding w3-hide-large" onclick="showInfo(this)">
+                                <p><b>Pratiche Veicoli <i class="fa fa-chevron-up"></i></b></p>
+                                <div class="w3-hide w3-animate-zoom">
+                                    <span class="w3-large">Immatricolazioni e Reimmatricolazioni, Passaggi di proprietà, Duplicati, Collaudi e Revisioni, Radiazioni</span><br>
+                                    <a onclick="document.getElementById('modal01').style.display='block'" class="w3-button w3-black w3-padding w3-hover-black w3-xlarge w3-round-large" style="vertical-align:middle"><span>Dettagli</span></a>
+                                </div>
                             </div>
                             <div id="modal01" class="w3-modal">
                                 <div class="w3-modal-content w3-card-4 w3-animate-zoom">
@@ -105,11 +113,19 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w3-white w3-xlarge w3-padding" onclick="document.getElementById('modal02').style.display='block'">
+                            <div class="w3-white w3-xlarge w3-padding w3-hide-small w3-hide-medium" onclick="document.getElementById('modal02').style.display='block'">
                                 <p class="w3-tooltip" >
-                                    <b>Pratiche Patenti <i class="fa fa-chevron-up" id="w3-hover-icon"></i></b>
-                                    <span class="w3-medium w3-text w3-animate-zoom">Rinnovi, Duplicati, Riclassificazioni, Conversioni</span>
+                                    <b>Pratiche Patenti <i class="fa fa-chevron-up w3-hover-icon"></i></b><br>
+                                    <span class="w3-large w3-text w3-animate-zoom">Rinnovi, Duplicati, Riclassificazioni, Conversioni</span><br>
+                                    <a onclick="document.getElementById('modal02').style.display='block'" class="w3-animate-zoom w3-text w3-button w3-black w3-padding w3-hover-black w3-xlarge w3-round-large" style="vertical-align:middle"><span>Dettagli</span></a>
                                 </p>
+                            </div>
+                            <div class="w3-white w3-xlarge w3-padding w3-hide-large" onclick="showInfo(this)">
+                                <p><b>Pratiche Patenti <i class="fa fa-chevron-up"></i></b></p>
+                                <div class="w3-hide w3-animate-zoom">
+                                    <span class="w3-large">Rinnovi, Duplicati, Riclassificazioni, Conversioni</span><br>
+                                    <a onclick="document.getElementById('modal02').style.display='block'" class="w3-button w3-black w3-padding w3-hover-black w3-xlarge w3-round-large" style="vertical-align:middle"><span>Dettagli</span></a>
+                                </div>
                             </div>
                             <div id="modal02" class="w3-modal">
                                 <div class="w3-modal-content w3-animate-zoom">
@@ -135,11 +151,19 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w3-white w3-xlarge w3-padding" onclick="document.getElementById('modal03').style.display='block'">
+                            <div class="w3-white w3-xlarge w3-padding w3-hide-medium w3-hide-small" onclick="document.getElementById('modal03').style.display='block'">
                                 <p class="w3-tooltip" >
-                                    <b>Pratiche Ciclomotori <i class="fa fa-chevron-up" id="w3-hover-icon"></i></b>
-                                    <span class="w3-medium w3-text w3-animate-zoom">Ritargatura, Passaggi, Sospensioni, Reimmatricolazioni, Duplicati, Radiazioni</span>
+                                    <b>Pratiche Ciclomotori <i class="fa fa-chevron-up w3-hover-icon"></i></b><br>
+                                    <span class="w3-large w3-text w3-animate-zoom">Ritargatura, Passaggi, Sospensioni, Reimmatricolazioni, Duplicati, Radiazioni</span><br>
+                                    <a onclick="document.getElementById('modal03').style.display='block'" class="w3-animate-zoom w3-text w3-button w3-black w3-padding w3-hover-black w3-xlarge w3-round-large" style="vertical-align:middle"><span>Dettagli</span></a>
                                 </p>
+                            </div>
+                            <div class="w3-white w3-xlarge w3-padding w3-hide-large" onclick="showInfo(this)">
+                                <p><b>Pratiche Ciclomotori <i class="fa fa-chevron-up"></i></b></p>
+                                <div class="w3-hide w3-animate-zoom">
+                                    <span class="w3-large">Ritargatura, Passaggi, Sospensioni, Reimmatricolazioni, Duplicati, Radiazioni</span><br>
+                                    <a onclick="document.getElementById('modal03').style.display='block'" class="w3-button w3-black w3-padding w3-hover-black w3-xlarge w3-round-large" style="vertical-align:middle"><span>Dettagli</span></a>
+                                </div>
                             </div>
                             <div id="modal03" class="w3-modal">
                                 <div class="w3-modal-content w3-animate-zoom">
@@ -167,11 +191,19 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w3-white w3-xlarge w3-padding" onclick="document.getElementById('modal04').style.display='block'">
-                                <p class="w3-tooltip" >
-                                    <b>Pratiche Trasporto Merci <i class="fa fa-chevron-up" id="w3-hover-icon"></i></b>
-                                    <span class="w3-medium w3-text w3-animate-zoom">Per conto terzi e Per conto proprio</span>
+                            <div class="w3-white w3-xlarge w3-padding w3-hide-medium w3-hide-small" onclick="document.getElementById('modal04').style.display='block'">
+                                <p class="w3-tooltip">
+                                    <b>Pratiche Trasporto Merci <i class="fa fa-chevron-up w3-hover-icon"></i></b><br>
+                                    <span class="w3-large w3-text w3-animate-zoom">Per conto terzi e Per conto proprio</span><br>
+                                    <a onclick="document.getElementById('modal04').style.display='block'" class="w3-animate-zoom w3-text w3-button w3-black w3-padding w3-hover-black w3-xlarge w3-round-large" style="vertical-align:middle"><span>Dettagli</span></a>
                                 </p>
+                            </div>
+                            <div class="w3-white w3-xlarge w3-padding w3-hide-large" onclick="showInfo(this)">
+                                <p><b>Pratiche Trasporto Merci <i class="fa fa-chevron-up"></i></b></p>
+                                <div class="w3-hide w3-animate-zoom">
+                                    <span class="w3-large">Per conto terzi e Per conto proprio</span><br>
+                                    <a onclick="document.getElementById('modal04').style.display='block'" class="w3-button w3-black w3-padding w3-hover-black w3-xlarge w3-round-large" style="vertical-align:middle"><span>Dettagli</span></a>
+                                </div>
                             </div>
                             <div id="modal04" class="w3-modal">
                                 <div class="w3-modal-content w3-animate-zoom">
@@ -200,11 +232,19 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w3-white w3-xlarge w3-padding-16" onclick="document.getElementById('modal05').style.display='block'">
+                            <div class="w3-white w3-xlarge w3-padding w3-hide-medium w3-hide-small" onclick="document.getElementById('modal05').style.display='block'">
                                 <p class="w3-tooltip" >
-                                    <b>Iscrizioni ai registri storici ASI, FMI e FIAT <i class="fa fa-chevron-up" id="w3-hover-icon"></i></b>
-                                    <span class="w3-medium w3-text w3-animate-zoom">Per la qualifica di "veicolo di interesse storico e collezionisticio" e tutte le agevolazioni previste (bollo e assicurazione)</span>
+                                    <b>Iscrizioni ai registri storici ASI, FMI e FIAT <i class="fa fa-chevron-up w3-hover-icon"></i></b><br>
+                                    <span class="w3-large w3-text w3-animate-zoom">Per la qualifica di "veicolo di interesse storico e collezionisticio" e tutte le agevolazioni previste (bollo e assicurazione)</span><br>
+                                    <a onclick="document.getElementById('modal05').style.display='block'" class="w3-animate-zoom w3-text w3-button w3-black w3-padding w3-hover-black w3-xlarge w3-round-large" style="vertical-align:middle"><span>Dettagli</span></a>
                                 </p>
+                            </div>
+                            <div class="w3-white w3-xlarge w3-padding w3-hide-large" onclick="showInfo(this)">
+                                <p><b>Iscrizioni ai registri storici ASI, FMI e FIAT <i class="fa fa-chevron-up"></i></b></p>
+                                <div class="w3-hide w3-animate-zoom">
+                                    <span class="w3-large">Per la qualifica di "veicolo di interesse storico e collezionisticio" e tutte le agevolazioni previste (bollo e assicurazione)</span><br>
+                                    <a onclick="document.getElementById('modal05').style.display='block'" class="w3-button w3-black w3-padding w3-hover-black w3-xlarge w3-round-large" style="vertical-align:middle"><span>Dettagli</span></a>
+                                </div>
                             </div>
                             <div id="modal05" class="w3-modal">
                                 <div class="w3-modal-content w3-animate-zoom">
@@ -230,12 +270,21 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w3-white w3-xlarge w3-padding-16" onclick="document.getElementById('modal06').style.display='block'">
-                                <p class="w3-tooltip">
-                                    <span class="w3-hide-medium"><b>Reimmatricolazioni <i class="fa fa-chevron-up" id="w3-hover-icon"></i></b></span>
-                                    <span class="w3-hide-large w3-hide-small w3-medium"><b>Reimmatricolazioni <i class="fa fa-chevron-up" id="w3-hover-icon"></i></b></span>
-                                    <span class="w3-medium w3-text w3-animate-zoom">Per la riammissione in circolazione dei veicoli cessati dalla circolazione o di origine sconosciuta</span>
+                            <div class="w3-white w3-xlarge w3-padding" onclick="document.getElementById('modal06').style.display='block'">
+                                <p class="w3-tooltip w3-hide-medium w3-hide-small">
+                                    <b>Reimmatricolazioni <i class="fa fa-chevron-up w3-hover-icon"></i></b><br>
+                                    <span class="w3-large w3-text w3-animate-zoom">Per la riammissione in circolazione dei veicoli cessati dalla circolazione o di origine sconosciuta</span><br>
+                                    <a onclick="document.getElementById('modal06').style.display='block'" class="w3-animate-zoom w3-text w3-button w3-black w3-padding w3-hover-black w3-xlarge w3-round-large" style="vertical-align:middle"><span>Dettagli</span></a>
                                 </p>
+                            </div>
+                            <div class="w3-white w3-xlarge w3-padding w3-hide-large" onclick="showInfo2(this)">
+                                <p class="w3-medium w3-hide-small"><b>Reimmatricolazioni </b></p>
+                                <p class="w3-hide-medium"><b>Reimmatricolazioni </b></p>
+                                <i class="fa fa-chevron-up"></i>
+                                <div class="w3-hide w3-animate-zoom">
+                                    <span class="w3-large">Per la riammissione in circolazione dei veicoli cessati dalla circolazione o di origine sconosciuta</span><br>
+                                    <a onclick="document.getElementById('modal06').style.display='block'" class="w3-button w3-black w3-padding w3-hover-black w3-xlarge w3-round-large" style="vertical-align:middle"><span>Dettagli</span></a>
+                                </div>
                             </div>
                             <div id="modal06" class="w3-modal">
                                 <div class="w3-modal-content w3-animate-zoom">
@@ -261,11 +310,19 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w3-white w3-xlarge w3-padding-16" onclick="document.getElementById('modal07').style.display='block'">
-                                <p class="w3-tooltip" >
-                                    <b>Collaudi e Revisioni <i class="fa fa-chevron-up" id="w3-hover-icon"></i></b>
-                                    <span class="w3-medium w3-text w3-animate-zoom">Inserimento Telai in archivio, Prenotazione sedute presso Motorizzazione e sedute esterne</span>
+                            <div class="w3-white w3-xlarge w3-padding-16 w3-hide-medium w3-hide-small" onclick="document.getElementById('modal07').style.display='block'">
+                                <p class="w3-tooltip">
+                                    <b>Collaudi e Revisioni <i class="fa fa-chevron-up w3-hover-icon"></i></b><br>
+                                    <span class="w3-large w3-text w3-animate-zoom">Inserimento Telai in archivio, Prenotazione sedute presso Motorizzazione e sedute esterne</span><br>
+                                    <a onclick="document.getElementById('modal07').style.display='block'" class="w3-animate-zoom w3-text w3-button w3-black w3-padding w3-hover-black w3-xlarge w3-round-large" style="vertical-align:middle"><span>Dettagli</span></a>
                                 </p>
+                            </div>
+                            <div class="w3-white w3-xlarge w3-padding w3-hide-large" onclick="showInfo(this)">
+                                <p><b>Collaudi e Revisioni <i class="fa fa-chevron-up"></i></b></p>
+                                <div class="w3-hide w3-animate-zoom">
+                                    <span class="w3-large">Inserimento Telai in archivio, Prenotazione sedute presso Motorizzazione e sedute esterne</span><br>
+                                    <a onclick="document.getElementById('modal07').style.display='block'" class="w3-button w3-black w3-padding w3-hover-black w3-xlarge w3-round-large" style="vertical-align:middle"><span>Dettagli</span></a>
+                                </div>
                             </div>
                             <div id="modal07" class="w3-modal">
                                 <div class="w3-modal-content w3-animate-zoom">
@@ -294,11 +351,19 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w3-white w3-xlarge w3-padding-16" onclick="document.getElementById('modal08').style.display='block'">
+                            <div class="w3-white w3-xlarge w3-padding w3-hide-medium w3-hide-small" onclick="document.getElementById('modal08').style.display='block'">
                                 <p class="w3-tooltip">
-                                    <b>Noleggio Con Conducente <i class="fa fa-chevron-up" id="w3-hover-icon"></i></b>
-                                    <span class="w3-medium w3-text w3-animate-zoom">Hai bisogno di un passaggio? Chiamaci e penseremo a tutto noi</span>
+                                    <b>Noleggio Con Conducente <i class="fa fa-chevron-up w3-hover-icon"></i></b><br>
+                                    <span class="w3-large w3-text w3-animate-zoom">Hai bisogno di un passaggio? Chiamaci e penseremo a tutto noi</span><br>
+                                    <a onclick="document.getElementById('modal08').style.display='block'" class="w3-animate-zoom w3-text w3-button w3-black w3-padding w3-hover-black w3-xlarge w3-round-large" style="vertical-align:middle"><span>Dettagli</span></a>
                                 </p>
+                            </div>
+                            <div class="w3-white w3-xlarge w3-padding w3-hide-large" onclick="showInfo(this)">
+                                <p><b>Noleggio Con Conducente <i class="fa fa-chevron-up"></i></b></p>
+                                <div class="w3-hide w3-animate-zoom">
+                                    <span class="w3-large">Hai bisogno di un passaggio? Chiamaci e penseremo a tutto noi</span><br>
+                                    <a onclick="document.getElementById('modal08').style.display='block'" class="w3-button w3-black w3-padding w3-hover-black w3-xlarge w3-round-large" style="vertical-align:middle"><span>Dettagli</span></a>
+                                </div>
                             </div>
                             <div id="modal08" class="w3-modal">
                                 <div class="w3-modal-content w3-animate-zoom">
@@ -324,11 +389,19 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w3-white w3-large w3-padding-16" onclick="document.getElementById('modal09').style.display='block'">
+                            <div class="w3-white w3-large w3-padding w3-hide-medium w3-hide-small" onclick="document.getElementById('modal09').style.display='block'">
                                 <p class="w3-tooltip">
-                                    <b>Hai subito un incidente stradale, un infortunio sul lavoro o credi di essere vittima di un caso di malsanità? <i class="fa fa-chevron-up" id="w3-hover-icon"></i></b>
-                                    <span class="w3-medium w3-text w3-animate-zoom">Chiamaci ed entro 24 ore ti faremo parlare con i nostri epsperti del settore che ti aiuteranno ad ottenere il miglior riasarcimento nel minor tempo possibile</span>
+                                    <b>Hai subito un incidente stradale, un infortunio sul lavoro o credi di essere vittima di un caso di malsanità? <i class="fa fa-chevron-up w3-hover-icon"></i></b><br>
+                                    <span class="w3-large w3-text w3-animate-zoom">Chiamaci ed entro 24 ore ti faremo parlare con i nostri epsperti del settore che ti aiuteranno ad ottenere il miglior riasarcimento nel minor tempo possibile</span><br>
+                                    <a onclick="document.getElementById('modal09').style.display='block'" class="w3-animate-zoom w3-text w3-button w3-black w3-padding w3-hover-black w3-xlarge w3-round-large" style="vertical-align:middle"><span>Dettagli</span></a>
                                 </p>
+                            </div>
+                            <div class="w3-white w3-xlarge w3-padding w3-hide-large" onclick="showInfo(this)">
+                                <p><b>Hai subito un incidente stradale, un infortunio sul lavoro o credi di essere vittima di un caso di malsanità? <i class="fa fa-chevron-up"></i></b></p>
+                                <div class="w3-hide w3-animate-zoom">
+                                    <span class="w3-large">Chiamaci ed entro 24 ore ti faremo parlare con i nostri epsperti del settore che ti aiuteranno ad ottenere il miglior riasarcimento nel minor tempo possibile</span><br>
+                                    <a onclick="document.getElementById('modal09').style.display='block'" class="w3-button w3-black w3-padding w3-hover-black w3-xlarge w3-round-large" style="vertical-align:middle"><span>Dettagli</span></a>
+                                </div>
                             </div>
                             <div id="modal09" class="w3-modal">
                                 <div class="w3-modal-content w3-animate-zoom">
@@ -355,7 +428,7 @@
             <h3 class="w3-xxlarge"><b>ORARI<span class="w3-hide-small"> DI APERTURA </span><i class="fa fa-clock-o"></i></b></h3>
             <div class="w3-container">
                 <div class="w3-half">
-                    <div class="w3-large w3-justify">
+                    <div class="w3-large w3-justify w3-center">
                         <b>
                             <p>LUNEDÌ: 15:30 - 20:00</p>
                             <p>MARTEDÌ - VENERDÌ: 09:00 - 12:30, 15:30 - 20:00</p>
@@ -409,17 +482,20 @@
                     riclassificazioni, conversioni) e iscrizioni a registri storici ASI, FMI e FIAT.
                 </p>
             </div>
-            <div class="w3-container">
-                <div class="w3-cell w3-cell-middle w3-container w3-hide-small">
+            <div class="w3-row w3-container">
+                <div class="w3-half w3-container w3-hide-small">
                     <img src="/assets/img/contatti/punto-di-domanda.jpg" class="w3-round w3-image" alt="Punto di Domanda">
                 </div>
-                <div class="w3-cell w3-cell-middle w3-container">
-                    <p class="w3-border w3-border-black w3-round-large" style="font-size: 20px;">
+                <div class="w3-half w3-container">
+                    <p class="w3-border w3-border-black w3-round-large w3-hide-small w3-hide-medium" style="font-size: 25px;">
+                        <em><b>Sai di avere diritto ad uno sconto sul bollo dell'auto se la iscrivi al registro storico? Non perdere l'occasione e contattaci subito!</b></em>
+                    </p>
+                    <p class="w3-border w3-border-black w3-round-large w3-hide-large" style="font-size: 20px;">
                         <em><b>Sai di avere diritto ad uno sconto sul bollo dell'auto se la iscrivi al registro storico? Non perdere l'occasione e contattaci subito!</b></em>
                     </p>
                     <a href="#contatti" class="w3-button w3-black w3-padding-24 w3-hover-black w3-xlarge w3-round-large"><span>CONTATTACI</span></a>
                 </div>
-            </div>    
+        </div>
         </div>
 
         <!-- Contact Section -->
