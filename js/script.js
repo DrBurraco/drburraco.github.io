@@ -1,3 +1,5 @@
+/** NAV BAR SECTION */
+
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
     var x = document.getElementById("navDemo");
@@ -7,21 +9,11 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+/**END OF NAVBAR SECTION*/
 
+/** SERVICE SECTION */ 
 
-/** SERVICE SECTION*/ 
-/* function showInfo() {
-    var x = document.getElementById("service-info-mobile");
-    var y = document.getElementById("w3-icon");
-    if (x.className.indexOf("w3-show") == -1 ) {
-        x.className += " w3-show";
-        y.className += " w3-icon-down";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-        y.className = y.className.replace(" w3-icon-down", " w3-icon-up");
-    }
-} */
-
+//Show other services description
 function showInfo(container) {
     var x = container.children;
     var description = x[1];
@@ -36,6 +28,7 @@ function showInfo(container) {
     
 }
 
+//Show service  Reimmatricolazioni description
 function showInfo2(container) {
     var x = container.children;
     var description = x[3];
